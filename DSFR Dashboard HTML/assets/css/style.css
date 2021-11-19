@@ -398,6 +398,9 @@ body #page-topbar {
 	border-bottom:3px solid #F8C5CA;
 	border-bottom-color:#F8C5CA;
 }
+.tablesWrap tbody td{
+	vertical-align: middle;
+}
 .tablesWrap tbody td .btn{
 	border:1px solid #C9C4C4;
 }
@@ -450,4 +453,23 @@ body #page-topbar {
 	color:#84151E;
 	font-size:20px;
 	top:5px;
+}
+
+
+/*Product page CSS*/
+.productImgs{
+    width:80px;
+    height:50px;
+    border-radius: 5px;
+    overflow: hidden;
+    border:1px solid #383838;
+}
+.productImgs img{
+    width:80px;
+    height:50px;
+}
+@media (max-width: 1330px){
+.productTable{
+    margin-top:3em !important;
+}
 }
