@@ -93,8 +93,8 @@ sup{
     background-color: #84151E;
     border-color: #84151E;
 }
-.gradientbtn{
-	
+.radius8{
+	border-radius:8px;
 }
 .addBtns{
 	border:1px solid #84151E;
@@ -469,7 +469,29 @@ body #page-topbar {
     height:50px;
 }
 @media (max-width: 1330px){
-.productTable{
-    margin-top:3em !important;
+    .productTable{
+        margin-top:3em !important;
+    }
 }
+
+/*Orders page CSS*/
+@media (max-width: 1355px){
+    .ordersTable{
+        margin-top:3em !important;
+    }
+}
+
+/*Add Product page CSS*/
+.tox .tox-statusbar, .tox-editor-header .tox-menubar{
+    display: none !important;
+}
+.tox{
+    border-radius: 10px !important;
+}
+.dropzone {
+    border: 2px dashed rgba(0,0,0,0.3);
+}
+.dropzone .fa-arrow-alt-circle-up{
+    font-size: 30px;
+    color:#C9C4C4;
 }
