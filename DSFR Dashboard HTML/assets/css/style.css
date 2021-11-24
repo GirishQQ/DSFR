@@ -78,6 +78,9 @@ sup{
 .defaultRed{
 	color:#DD0303;
 }
+.blueText{
+	color:#42A7FF;
+}
 .buttons {
   -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px);
