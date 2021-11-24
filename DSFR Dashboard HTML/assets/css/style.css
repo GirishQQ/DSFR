@@ -495,3 +495,6 @@ body #page-topbar {
     font-size: 30px;
     color:#C9C4C4;
 }
+.select2-container{
+    width: 100% !important;
+}

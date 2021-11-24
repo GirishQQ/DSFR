@@ -11,6 +11,10 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
@@ -597,77 +601,185 @@
 
                     <div class="col-xl-3">
                         <div class="card">
-                            <div class="card-body p-0">
-								<div class="p-3">
-                                    <div class="row align-items-center">
-                                        <div class="col">
-                                            <h6 class="m-0"> Notifications </h6>
-                                        </div>
-                                        <div class="col-auto">
-                                            <a href="#!" class="small"> View All</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-simplebar>
-                                    <a href="" class="text-reset notification-item">
-                                        <div class="d-flex align-items-start">
-                                            <div class="avatar-xs me-3">
-                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                    <i class="bx bx-cart"></i>
-                                                </span>
-                                            </div>
-                                            <div class="flex-1">
-                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1">If several languages coalesce the grammar</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-reset notification-item">
-                                        <div class="d-flex align-items-start">
-                                            <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs"
-                                                alt="user-pic">
-                                            <div class="flex-1">
-                                                <h6 class="mt-0 mb-1">James Lemire</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1">It will seem like simplified English.</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-reset notification-item">
-                                        <div class="d-flex align-items-start">
-                                            <div class="avatar-xs me-3">
-                                                <span class="avatar-title bg-success rounded-circle font-size-16">
-                                                    <i class="bx bx-badge-check"></i>
-                                                </span>
-                                            </div>
-                                            <div class="flex-1">
-                                                <h6 class="mt-0 mb-1">Your item is shipped</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1">If several languages coalesce the grammar</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                            <div class="card-body">
+                                <div class="row">
+                                    <h2 class="card-title mb-3 fw-bold mt-2 px-2">Product status</h2>
 
-                                    <a href="" class="text-reset notification-item">
-                                        <div class="d-flex align-items-start">
-                                            <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs"
-                                                alt="user-pic">
-                                            <div class="flex-1">
-                                                <h6 class="mt-0 mb-1">Salena Layfield</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    <div class="col-12 float-start px-2 mb-2">
+                                        <select class="form-select radius8" aria-label="Default select example">
+                                            <option selected>Active</option>
+                                            <option>Draft</option>
+                                        </select>
+                                        <p class="mt-2 mb-0">This product will be hidden from all sales channels.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <h2 class="card-title mb-3 fw-bold mt-2 px-2">Organization</h2>
+
+                                    <div class="col-12 float-start px-2 mb-2">
+                                        <label class="form-label">Vendor</label>
+                                        <select class="form-control select2 w-100">
+                                            <option>e.g. Nike</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="CO">Colorado</option>
+                                        </select>
+                                    </div>
+
+                                    <hr class="mt-2 mb-2">
+
+                                    <h2 class="card-title mb-3 fw-bold mt-2 px-2">Product Type</h2>
+
+                                    <div class="col-12 float-start px-2 mb-2">
+                                        <label class="form-label">Standard</label>
+                                        <select class="form-control select2 w-100">
+                                            <option>Search Types</option>
+                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                            </optgroup>
+                                            <optgroup label="Pacific Time Zone">
+                                                <option value="CA">California</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                            </optgroup>
+                                            <optgroup label="Mountain Time Zone">
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                            </optgroup>
+                                            <optgroup label="Central Time Zone">
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+
+                                    <hr class="mt-2 mb-2">
+
+                                    <h2 class="card-title mb-3 fw-bold mt-2 px-2">Collections</h2>
+
+                                    <div class="col-12 float-start px-2 mb-2">
+                                        <select class="select2 form-control select2-multiple w-100" multiple="multiple"
+                                            data-placeholder="Search For Collections">
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="CA">California</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                        </select>
+                                        <p class="mt-2 mb-0">Add this product to a collection so it’s easy to find in your store.</p>
+                                    </div>
+
+                                    <hr class="mt-2 mb-2">
+
+                                    <h2 class="card-title mb-3 fw-bold mt-2 px-2">Tags</h2>
+
+                                    <div class="col-12 float-start px-2 mb-2">
+                                        <select class="select2 form-control select2-multiple w-100" multiple="multiple"
+                                            data-placeholder="Search For Collections">
+                                            <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="CA">California</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 395 396">
+                                        <g id="Group_5065" data-name="Group 5065" transform="translate(0 -832)">
+                                          <rect id="Rectangle_2663" data-name="Rectangle 2663" width="200" height="200" rx="19" transform="translate(0 832)" fill="#fff"/>
+                                          <image id="kdab_qr" width="384" height="384" transform="translate(6 838)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQMAAABB54RGAAAABlBMVEX///8AAABVwtN+AAABVUlEQVRoge3ZzQ2DMAwFYEsMkJGyOiNlgEgu8U9IWtqrXem9A6Xw0YsbJwARgiAIgvxb2NKJTzqYz9Kvo8UPn6CpqH65gHq9SPx9FjQNHUVcytlIqRcbNCu9NpX7WmfQpFSapHrQtFQ+ik1xN13PgmahFpvYfOOHQVPR5SIbkF8BaDiVmsrEtu2JPz7+A6DRtI1WOfqlrEVqk71rsht7oMnobJXqad5N14e1C2g0VUCjprQXlvaAhlPzxUagjEptn/ZDoJno3iBtYivsAxI0E2Vb549qNvK7af2N96YJGk1J6sfSILeHi/QU0FhqDbJ4ESt77rkPNAtdL5IFiQ8+W1eCZqJexm6THU2lr1lAU1H94uc+liaguej7i8vDa/3w2AM0Da1z3FX3RKA5KTPPTfs9DEHDqHxo07Snifz8hgU0nlr6+nJFVP2+dgENogiCIAjyH3kBpbWHS9qL73YAAAAASUVORK5CYII="/>
+                                        </g>
+                                      </svg>                                      
                                 </div>
                             </div>
                         </div>
@@ -675,6 +787,11 @@
 
                 </div>
                 <!-- end row -->
+                <div class="row">
+                    <div class="col-xl-9 col-lg-12 col-md-12 col-12 float-start px-2 mb-3 text-end">
+                        <button type="button" class="btn successBtns waves-effect waves-light mb-3 px-4">Submit</button>
+                    </div>
+                </div>
             </form>
             </div>
             <!-- End Page-content -->
@@ -740,6 +857,14 @@
 <script src="assets/libs/simplebar/simplebar.min.js"></script>
 <script src="assets/libs/node-waves/waves.min.js"></script>
 <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<script src="assets/libs/select2/js/select2.min.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+<!-- form advanced init -->
+<script src="assets/js/pages/form-advanced.init.js"></script>
 
 <!--tinymce js-->
 <script src="assets/libs/tinymce/tinymce.min.js"></script>
