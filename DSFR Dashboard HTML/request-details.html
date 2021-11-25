@@ -11,12 +11,18 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Plugins css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 	<!-- Style Css-->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<!-- chatbox Css-->
@@ -361,12 +367,13 @@
         <div class="main-content">
 
             <div class="page-content">
+                <form>
 
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="page-title mb-0 font-size-18 fw-bold">My Products</h4>
+                            <h4 class="page-title mb-0 font-size-18 fw-normal"><span class="fw-bold">Request Details</span></h4>
                         </div>
                     </div>
                 </div>
@@ -375,358 +382,51 @@
                 <div class="row">
 
                     <div class="col-xl-12">
-						
-						<div class="card tableCard">
+						<div class="card blankCardMinHeight">
                             <div class="card-body">
-
-                                <div class="row">
-                                    <div class="mb-3 col-12">
-										<div class="position-absolute tableSearchWrap">
-											<!-- App Search-->
-											<form class="app-search d-none d-xl-inline-block">
-												<div class="position-relative">
-													<input type="text" class="form-control" placeholder="Search by order ID">
-													<span class="bx bx-search-alt"></span>
-												</div>
-											</form>
-											
-											<div class="dropdown d-inline-block d-xl-none ms-2">
-												<button type="button" class="btn header-item noti-icon waves-effect"
-													id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-													aria-expanded="false">
-													<i class="mdi mdi-magnify"></i>
-												</button>
-												<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-													aria-labelledby="page-header-search-dropdown">
-
-													<form class="p-3">
-														<div class="m-0">
-															<div class="input-group">
-																<input type="text" class="form-control" placeholder="Search by order ID"
-																	aria-label="Recipient's username">
-																<div class="input-group-append">
-																	<button class="btn btn-primary" type="submit"><i
-																			class="mdi mdi-magnify"></i></button>
-																</div>
-															</div>
-														</div>
-													</form>
-												</div>
-											</div>
-											
-											<button type="button" class="btn addBtns waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bulkupload"><i class="fas fa-plus"></i> Bulk Upload</button>
-                                            <button type="button" class="btn addBtns waves-effect waves-light"><i class="fas fa-plus"></i> Add New Product</button>
-										</div>
-										
-										<!-- Nav tabs -->
-										<ul class="nav nav-tabs nav-tabs-custom mt-5 mt-md-0 productTable" role="tablist">
-											<li class="nav-item">
-												<a class="nav-link active" data-bs-toggle="tab" href="#outofstock1" role="tab">
-													<span>Out of Stock</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" data-bs-toggle="tab" href="#instock1" role="tab">
-													<span>In Stock</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" data-bs-toggle="tab" href="#all1" role="tab">
-													<span>All</span>
-												</a>
-											</li>
-										</ul>
-										
-										<!-- Tab panes -->
-										<div class="tab-content text-muted mt-3">
-											<div class="tab-pane active" id="outofstock1" role="tabpanel">
-												<div class="table-responsive">
-													<table class="table table-striped mb-0 tablesWrap">
-														<thead>
-															<tr>
-																<th>Product ID</th>
-                                                                <th></th>
-																<th>Product Name</th>
-																<th>Store Name</th>
-																<th>Inventory</th>
-																<th>Status</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Leather Shoes</td>
-																<td>Megastore Enterprise</td>
-																<td>0</td>
-																<td><span class="badge rounded bg-secondary">Out of Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-															<tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Flip Mobiles</td>
-																<td>Supersonic Electronics</td>
-																<td>0</td>
-																<td><span class="badge rounded bg-secondary">Out of Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-											<div class="tab-pane" id="instock1" role="tabpanel">
-												<div class="table-responsive">
-													<table class="table table-striped mb-0 tablesWrap">
-														<thead>
-															<tr>
-																<th>Product ID</th>
-                                                                <th></th>
-																<th>Product Name</th>
-																<th>Store Name</th>
-																<th>Inventory</th>
-																<th>Status</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Bodycare Package</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Trio Pants</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Shoes</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Titan Watch</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Timeless Watch</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Glares 101</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>All Essentials Bag</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Squishy Purse</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-											<div class="tab-pane" id="all1" role="tabpanel">
-												<div class="table-responsive">
-													<table class="table table-striped mb-0 tablesWrap">
-														<thead>
-															<tr>
-																<th>Product ID</th>
-                                                                <th></th>
-																<th>Product Name</th>
-																<th>Store Name</th>
-																<th>Inventory</th>
-																<th>Status</th>
-																<th></th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Bodycare Package</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Leather Shoes</td>
-																<td>Megastore Enterprise</td>
-																<td>0</td>
-																<td><span class="badge rounded bg-secondary">Out of Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Trio Pants</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Shoes</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Titan Watch</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Flip Mobiles</td>
-																<td>Supersonic Electronics</td>
-																<td>0</td>
-																<td><span class="badge rounded bg-secondary">Out of Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Timeless Watch</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Glares 101</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>All Essentials Bag</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-                                                            <tr>
-																<td>#DS001</td>
-																<td><p class="productImgs mb-0 mx-auto">
-                                                                    <img src="assets/images/small/img-6.jpg">
-                                                                </p></td>
-																<td>Squishy Purse</td>
-																<td>Megastore Enterprise</td>
-																<td>50/100</td>
-																<td><span class="badge rounded bg-success">In Stock</span></td>
-																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-										
-									 </div>
+                                <div class="col-md-3 col-sm-3 col-3 pageBack float-start">
+									<a href="#"><i class="fas fa-arrow-left"></i></a>
+								</div>
+                                <div class="col-md-9 col-sm-9 col-9 px-0 float-start text-end">
+                                    <span class="badge bg-success px-4 py-2">Resolve</span>
+                                    <span class="badge bg-success px-4 py-2">Resolved</span>
+                                    <span class="badge bg-danger px-4 py-2">Pending</span>
                                 </div>
-								
+
+                                <h2 class="card-title mb-3 fw-bold mt-3 col-12 float-start">Request ID: #DSRQ001</h2>
+                                <div class="row px-0">
+                                    <div class="col-md-4 col-sm-12 col-12 float-start mb-3">
+                                        <p class="fw-bold">Topic: POS Machine</p>
+                                    </div>
+    
+                                    <div class="col-md-4 col-sm-12 col-12 float-start mb-3">
+                                        <p class="fw-bold">Subject: POS Machine delivered faulty. Need Replacement</p>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12 col-12 float-start mb-3">
+                                        <div class="col-12 d-flex">
+                                            <p class="col-3 fw-bold">From:</p><p>Vendor Name</p>
+                                        </div>
+                                        <div class="col-12 d-flex">
+                                            <p class="col-3 fw-bold">To:</p><p>DSFR Customer 
+                                                Support</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="col-12 float-start px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
                 <!-- end row -->
+            </form>
             </div>
             <!-- End Page-content -->
 
@@ -745,34 +445,6 @@
     </div>
     <!-- END layout-wrapper -->
 	
-    <!-- Bulk Upload Modal -->
-    <div class="modal fade bulkupload" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title mt-0">Product Bulk Upload</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Upload the CSV file, in correct format</p>
-                    <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="bulkupload">
-                        <label class="input-group-text" for="bulkupload">Upload File</label>
-                    </div>
-                    
-                    <p class="mb-0"><a href="#" class="blueText text-decoration-underline">Download a Blank Sample Template CSV file for Bulk upload</a></p>
-                </div>
-                <div class="modal-footer text-start border-top-0">
-                    <button type="button" class="btn filledaddBtns waves-effect waves-light px-4">Add</button>
-                    <button type="button" class="btn addBtns waves-effect waves-light px-4" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- Bulk Upload Modal End -->
-
 	<!-- START Chat -->
 	<div class="floating-chat">
 		<i class="fa fa-comments" aria-hidden="true"></i>
@@ -820,11 +492,24 @@
 <script src="assets/libs/node-waves/waves.min.js"></script>
 <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
 
-<!-- apexcharts -->
-<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+<script src="assets/libs/select2/js/select2.min.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
 
-<script src="assets/js/pages/dashboard-2.init.js"></script>
+<!-- form advanced init -->
+<script src="assets/js/pages/form-advanced.init.js"></script>
 
+<!--tinymce js-->
+<script src="assets/libs/tinymce/tinymce.min.js"></script>
+
+<!-- init js -->
+<script src="assets/js/pages/form-editor.init.js"></script>
+
+<!-- Plugins js -->
+<script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+
+<!-- App js -->
 <script src="assets/js/app.js"></script>
 
 <!-- chatbox js -->

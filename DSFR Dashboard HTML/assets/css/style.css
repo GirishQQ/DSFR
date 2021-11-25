@@ -81,6 +81,9 @@ sup{
 .blueText{
 	color:#42A7FF;
 }
+.greenText{
+	color:#63AD19;
+}
 .buttons {
   -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px);
@@ -110,6 +113,11 @@ sup{
 	border-radius:10px;
 	color:#ffffff;
 }
+.modal-footer .filledaddBtns{
+    background:#84151E;
+	border-radius:10px;
+	color:#ffffff;
+}
 .successBtns{
 	border:1px solid #63AD19;
 	border-radius:10px;
@@ -121,6 +129,18 @@ sup{
 	border:1px solid #84151E;
 	border-radius:10px;
 	color:#ffffff;
+}
+.formIcons.searchIcon {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    top: 32%;
+    right: 21px;
+}
+.blankCardMinHeight{
+    min-height:550px;
 }
 
 /*Vendor login Page CSS*/
@@ -471,6 +491,9 @@ body #page-topbar {
     width:80px;
     height:50px;
 }
+.bulkupload .modal-footer{
+    justify-content: flex-start;
+}
 @media (max-width: 1330px){
     .productTable{
         margin-top:3em !important;
@@ -500,4 +523,22 @@ body #page-topbar {
 }
 .select2-container{
     width: 100% !important;
+}
+
+/*Create Order page CSS*/
+.orderTable table thead tr th, .orderTable table tbody tr td{
+    border:0px;
+    border-bottom: 0px !important;
+    padding:.75rem 0rem;
+}
+.orderTable table tbody tr:nth-child(1) td, .orderTable table tbody tr:nth-child(2) td, .orderTable table tbody tr:nth-child(3) td{
+    padding:.30rem 0rem;
+}
+
+/*Bulk Upload CSS*/
+.bulkupload .input-group input{
+    border-radius:8px 0px 0px 8px !important;
+}
+.bulkupload .input-group label{
+    border-radius:0px 8px 8px 0px !important;
 }
