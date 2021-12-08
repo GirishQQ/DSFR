@@ -10,9 +10,9 @@
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+	
+	<!-- touchspin Css-->
+	<link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
 
     <!-- Bootstrap Css -->
@@ -21,12 +21,11 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <!-- Plugins css -->
-    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 	<!-- Style Css-->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<!-- chatbox Css-->
     <link href="assets/css/chatbox.css" rel="stylesheet" type="text/css" />
+	
 
 </head>
 
@@ -367,13 +366,12 @@
         <div class="main-content">
 
             <div class="page-content">
-                <form>
 
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="page-title mb-0 font-size-18 fw-normal"><span class="fw-bold">Order Details</span></h4>
+                            <h4 class="page-title mb-0 font-size-18 fw-normal"><span class="fw-bold">Store Details</span></h4>
                         </div>
                     </div>
                 </div>
@@ -381,133 +379,73 @@
 
                 <div class="row">
 
-                    <div class="col-xl-9">
+                    <div class="col-xl-12">
+						
 						<div class="card">
                             <div class="card-body">
-                                <div class="row pageBack">
+								<div class="col-md-3 col-sm-3 col-3 pageBack float-start">
 									<a href="#"><i class="fas fa-arrow-left"></i></a>
 								</div>
-
-                                <h2 class="card-title mb-3 fw-bold mt-3">Order ID: #DSRQ001</h2>
-
-                                <div class="row pt-3">
-                                    <div class="col-md-3 col-sm-3 col-12 float-start px-2 mb-3">
-                                        <p class="productImgs mb-0">
-                                            <img src="assets/images/small/img-6.jpg">
-                                        </p>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-3 col-12 float-start px-2 mb-3">
-                                        <p class="mt-0 mt-sm-3 mb-0">Leather Shoes</p>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-3 col-12 float-start px-2 mb-3">
-                                        <p class="mt-0 mt-sm-3 mb-0">CHF.200 x 1</p>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-3 col-12 float-start px-2 mb-3">
-                                        <p class="mt-0 mt-sm-3">CHF.200</p>
-                                    </div>
-
-                                    <hr class="mt-2">
-
-                                    <div class="col-12 float-start px-2 text-end">
-                                        <button type="button" class="btn blackBtn waves-effect waves-light px-4">Complete Order</button>
-                                    </div>
+                                <div class="col-md-9 col-sm-9 col-9 px-0 mb-4 float-start text-end">
+                                    <span class="badge bg-success px-4 py-2">Active</span>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="card">
-                            <div class="card-body">
                                 <div class="row">
-                                    <h2 class="card-title mb-3 fw-bold mt-3 px-2 greenText">
-                                        <i class="fas fa-check-circle me-2"></i>
-                                        Paid
-                                    </h2>
-
-                                    <div class="col-12 float-start px-2">
-                                        <div class="table-responsive orderTable">
-                                            <table class="table table-borderless mb-0">
-        
-                                                <thead>
-                                                    <tr>
-                                                        <th class="fw-bold">Subtotal</th>
-                                                        <th>1 item</th>
-                                                        <th>CHF. 200</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Add Shipping</td>
-                                                        <td>Standard (44.0 kg)</td>
-                                                        <td>CHF. 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Add Discount</td>
-                                                        <td>----</td>
-                                                        <td>CHF. 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tax</td>
-                                                        <td>----</td>
-                                                        <td>CHF. 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td  class="fw-bold">Total</td>
-                                                        <td></td>
-                                                        <td class="fw-bold">CHF.200</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                    <hr class="mt-2">
-
-                                    <div class="col-12 float-start px-2">
-                                        <p>Add a product to calculate total and view payment details.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-xl-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <h2 class="card-title fw-bold mt-2 px-2">Customer Name</h2>
-
-                                    <div class="col-12 float-start px-2 mb-2">
-                                        <p class="blueText mb-0">Robert Mathew</p>
-                                    </div>
-
-                                    <hr class="mt-2 mb-2">
-
-                                    <h2 class="card-title fw-bold mt-2 px-2">Contact Information</h2>
-
-                                    <div class="col-12 float-start px-2 mb-2">
-                                        <p class="mb-0">robert.mathew@gmail.com</p>
-                                        <p class="mb-0">+41-765-559-071</p>
-                                    </div>
-
-                                    <hr class="mt-2 mb-2">
-
-                                    <h2 class="card-title fw-bold mt-2 px-2">Shipping Address</h2>
-
-                                    <div class="col-12 float-start px-2 mb-2">
-                                        <p class="mb-0">Apt No.7, Orchid Building, Near St. Martin's Church, Zurich, Switzerland-  8008</p>
-                                    </div>
-
-                                    <hr class="mt-2 mb-2">
-
-                                    <h2 class="card-title fw-bold mt-2 px-2">Billing Address</h2>
-
-                                    <div class="col-12 float-start px-2 mb-2">
-                                        <p class="mb-0">Same as shipping address</p>
-                                    </div>
+                                    <div class="col-12">
+										<div class="col-md-4 col-sm-12 col-12 float-start">
+										   <div class="col-12 float-start mt-2 mt-md-4 mb-4">
+											  <p class="addUserPic addStorePic mx-auto mt-1 mb-1">
+												 <input type="file" class="custom-file-input" id="customFile" name="filename">
+												 <label class="custom-file-label mb-0" for="customFile"></label>
+											  </p>
+											  <p class="text-center font14 mb-1 pt-3">
+                                                <button type="button" class="btn addBtns waves-effect waves-light me-2">View Products</button>
+											  </p>
+										   </div>
+										</div>
+										<div class="col-md-8 col-sm-12 col-12 float-start mb-4">
+										   <div class="row ps-0 ps-md-4">
+											  <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 float-start px-2 mb-3">
+                                                <div class="row">
+                                                    <h6 class="heliosRounded robotofont fw-bold regSecondHead mb-3">STORE DETAILS</h6>
+                                                    <p><span class="fw-bold">Store Name:</span> House Store</p>
+                                                    <p><span class="fw-bold">Store Location:</span> Lucern</p>
+                                                    <p><span class="fw-bold">Contact No.:</span> +41-765-559-071</p>
+                                                    <p><span class="fw-bold">Store Type.:</span> Indivisual</p>
+                                                </div>
+											  </div>
+											  <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 float-start px-2 mb-3">
+                                                <div class="row">
+                                                    <h6 class="heliosRounded robotofont fw-bold regSecondHead mb-3">ADDRESS DETAILS</h6>
+                                                    <p><span class="fw-bold">Street Details:</span> Apartment No.7, Orchid Building, Near St. Peter's Church</p>
+                                                    <p><span class="fw-bold">City:</span> Zurich</p>
+                                                    <p><span class="fw-bold">Country:</span> Switzerland, Europe</p>
+                                                    <p><span class="fw-bold">Zip Code:</span> 8008</p>
+                                                </div>
+											  </div>
+											  <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 float-start px-2 mb-3">
+                                                <div class="row">
+                                                    <h6 class="heliosRounded robotofont fw-bold regSecondHead mb-3">ACCOUNT DETAILS</h6>
+                                                    <p><span class="fw-bold">IBAN:</span> CH41-765-559-071</p>
+                                                    <p><span class="fw-bold">Bank Name:</span> Lorem Ipsum</p>
+                                                    <p><span class="fw-bold">Beneficiary Name:</span> Lorem Ipsum</p>
+                                                </div>
+											  </div>
+											  <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 float-start px-2 mb-3">
+                                                <div class="row">
+                                                    <h6 class="heliosRounded robotofont fw-bold regSecondHead mb-3">POS MACHINE REQUIREMENT</h6>
+                                                    <p><span class="fw-bold">Quantity:</span> 2</p>
+                                                    <p class="mb-0"><span class="fw-bold">Remarks:</span></p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                                        esse cillum dolore eu fugiat nulla pariatur. </p>
+                                                </div>
+											  </div>
+										   </div>
+										</div>
+									
+									 </div>
                                 </div>
                             </div>
                         </div>
@@ -515,7 +453,6 @@
 
                 </div>
                 <!-- end row -->
-            </form>
             </div>
             <!-- End Page-content -->
 
@@ -581,28 +518,18 @@
 <script src="assets/libs/node-waves/waves.min.js"></script>
 <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
 
+
+<!-- chatbox js -->
+<script src="assets/js/chatbox.js"></script>
+
 <script src="assets/libs/select2/js/select2.min.js"></script>
-<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
-<script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
 
 <!-- form advanced init -->
 <script src="assets/js/pages/form-advanced.init.js"></script>
 
-<!--tinymce js-->
-<script src="assets/libs/tinymce/tinymce.min.js"></script>
-
-<!-- init js -->
-<script src="assets/js/pages/form-editor.init.js"></script>
-
-<!-- Plugins js -->
-<script src="assets/libs/dropzone/min/dropzone.min.js"></script>
-
 <!-- App js -->
 <script src="assets/js/app.js"></script>
-
-<!-- chatbox js -->
-<script src="assets/js/chatbox.js"></script>
 
 </body>
 

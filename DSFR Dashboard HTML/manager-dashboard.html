@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>DSFR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<!-- Style Css-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<!-- chatbox Css-->
+    <link href="assets/css/chatbox.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-layout="detached" data-topbar="colored">
+
+
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+<div class="container-fluid">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="container-fluid">
+                    <div class="float-end">
+
+                        <div class="dropdown d-inline-block d-lg-none ms-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+
+                                <form class="p-3">
+                                    <div class="m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i
+                                                        class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge rounded-pill bg-danger ">3</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs"
+                                                alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">James Lemire</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs"
+                                                alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Salena Layfield</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 " href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1">Patrick</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i>
+                                    Profile</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> My
+                                    Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i
+                                        class="bx bx-wrench font-size-16 align-middle me-1"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i
+                                        class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="50">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="50">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item toggle-btn waves-effect"
+                            id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form>
+
+                        <div class="dropdown dropdown-mega d-none d-lg-inline-block ms-2">
+                            <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
+                                aria-haspopup="false" aria-expanded="false">
+                                DSFR Marketplace
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header> <!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+
+    <div class="h-100">
+
+        <div class="user-wid text-center pt-4 pb-2">
+            <div class="user-img">
+                <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-md mx-auto rounded-circle">
+            </div>
+
+            <div class="mt-3">
+
+                <a href="#" class="text-dark fw-bold font-size-16">Regional Manager</a>
+
+            </div>
+        </div>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 25">
+						  <g id="Icon_material-dashboard" data-name="Icon material-dashboard" transform="translate(0.5 0.5)">
+							<path id="Icon_material-dashboard-2" data-name="Icon material-dashboard" d="M4.5,17.833H15.167V4.5H4.5ZM4.5,28.5H15.167v-8H4.5Zm13.333,0H28.5V15.167H17.833Zm0-24v8H28.5v-8Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#707070" stroke-width="1"/>
+						  </g>
+						</svg></span>
+
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+				
+				<li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" viewBox="0 0 19.791 31.029">
+						  <g id="Group_5173" data-name="Group 5173" transform="translate(-10.291 -4.297)">
+							<path id="Path_4881" data-name="Path 4881" d="M808.595,319.119v6.156H800v-6.156h1.228v4.928h6.139v-4.928Z" transform="translate(-784.652 -312.997)" fill="#707070"/>
+							<path id="Path_4882" data-name="Path 4882" d="M1171.928,1026.827a1.428,1.428,0,0,1-1.428,1.428h-1.311a1.428,1.428,0,0,1-1.428-1.428v-1.4a1.432,1.432,0,0,1,1.428-1.428h1.311a1.432,1.432,0,0,1,1.428,1.428Zm-1.286.142a.2.2,0,0,0,.058-.142v-1.4a.2.2,0,0,0-.056-.141.2.2,0,0,0-.144-.058h-1.311a.2.2,0,0,0-.144.058.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.2.2h1.311A.2.2,0,0,0,1170.642,1026.969Z" transform="translate(-1145.358 -1004.354)" fill="#707070"/>
+							<path id="Path_4883" data-name="Path 4883" d="M1171.928,1273.845a1.432,1.432,0,0,1-1.428,1.428h-1.311a1.432,1.432,0,0,1-1.428-1.428v-1.4a1.432,1.432,0,0,1,1.428-1.427h1.311a1.432,1.432,0,0,1,1.428,1.427Zm-1.284.141a.2.2,0,0,0,.056-.141v-1.4a.2.2,0,0,0-.056-.141.2.2,0,0,0-.144-.058h-1.311a.2.2,0,0,0-.144.058.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.056.141.2.2,0,0,0,.144.059h1.311A.2.2,0,0,0,1170.644,1273.986Z" transform="translate(-1145.357 -1246.633)" fill="#707070"/>
+							<path id="Path_4884" data-name="Path 4884" d="M1171.928,1520.826a1.428,1.428,0,0,1-1.428,1.428h-1.311a1.428,1.428,0,0,1-1.428-1.428v-1.4a1.424,1.424,0,0,1,.42-1.008h0a1.423,1.423,0,0,1,1.01-.418h1.311a1.424,1.424,0,0,1,1.01.418h0a1.424,1.424,0,0,1,.42,1.008Zm-1.286.142a.2.2,0,0,0,.058-.142v-1.4a.2.2,0,0,0-.056-.141h0a.2.2,0,0,0-.141-.059h-1.311a.2.2,0,0,0-.142.059h0a.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.2.2h1.311A.2.2,0,0,0,1170.642,1520.968Z" transform="translate(-1145.358 -1488.876)" fill="#707070"/>
+							<path id="Path_4885" data-name="Path 4885" d="M905.9,1026.827a1.428,1.428,0,0,1-1.428,1.428h-1.311a1.428,1.428,0,0,1-1.428-1.428v-1.4a1.432,1.432,0,0,1,1.428-1.428h1.311a1.432,1.432,0,0,1,1.428,1.428Zm-1.286.142a.2.2,0,0,0,.059-.142v-1.4a.2.2,0,0,0-.056-.141.2.2,0,0,0-.144-.058h-1.311a.2.2,0,0,0-.144.058.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.2.2h1.311A.2.2,0,0,0,904.612,1026.969Z" transform="translate(-884.432 -1004.354)" fill="#707070"/>
+							<path id="Path_4886" data-name="Path 4886" d="M905.9,1273.845a1.432,1.432,0,0,1-1.428,1.428h-1.311a1.432,1.432,0,0,1-1.428-1.428v-1.4a1.432,1.432,0,0,1,1.428-1.427h1.311a1.432,1.432,0,0,1,1.428,1.427Zm-1.284.141a.2.2,0,0,0,.056-.141v-1.4a.2.2,0,0,0-.056-.141.2.2,0,0,0-.144-.058h-1.311a.2.2,0,0,0-.144.058.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.056.141.2.2,0,0,0,.144.059h1.311a.2.2,0,0,0,.144-.059Z" transform="translate(-884.432 -1246.633)" fill="#707070"/>
+							<path id="Path_4887" data-name="Path 4887" d="M905.9,1520.826a1.428,1.428,0,0,1-1.428,1.428h-1.311a1.428,1.428,0,0,1-1.428-1.428v-1.4a1.424,1.424,0,0,1,.42-1.008h0a1.423,1.423,0,0,1,1.01-.418h1.311a1.423,1.423,0,0,1,1.01.418h0a1.424,1.424,0,0,1,.42,1.008Zm-1.286.142a.2.2,0,0,0,.059-.142v-1.4a.2.2,0,0,0-.056-.141h0a.2.2,0,0,0-.142-.059h-1.311a.2.2,0,0,0-.142.059h0a.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.2.2h1.311A.2.2,0,0,0,904.612,1520.968Z" transform="translate(-884.432 -1488.876)" fill="#707070"/>
+							<path id="Path_4888" data-name="Path 4888" d="M651.272,1026.827a1.428,1.428,0,0,1-1.428,1.428h-1.311a1.428,1.428,0,0,1-1.428-1.428v-1.4a1.432,1.432,0,0,1,1.428-1.428h1.311a1.433,1.433,0,0,1,1.428,1.428Zm-1.286.142a.2.2,0,0,0,.059-.142v-1.4a.2.2,0,0,0-.056-.141.2.2,0,0,0-.144-.058h-1.311a.2.2,0,0,0-.144.058.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.2.2h1.311A.2.2,0,0,0,649.985,1026.969Z" transform="translate(-634.69 -1004.354)" fill="#707070"/>
+							<path id="Path_4889" data-name="Path 4889" d="M651.272,1273.845a1.432,1.432,0,0,1-1.428,1.428h-1.311a1.432,1.432,0,0,1-1.428-1.428v-1.4a1.433,1.433,0,0,1,1.428-1.427h1.311a1.432,1.432,0,0,1,1.428,1.427Zm-1.284.141a.2.2,0,0,0,.056-.141v-1.4a.2.2,0,0,0-.056-.141.2.2,0,0,0-.144-.058h-1.311a.2.2,0,0,0-.144.058.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.056.141.2.2,0,0,0,.144.059h1.311A.2.2,0,0,0,649.988,1273.986Z" transform="translate(-634.69 -1246.633)" fill="#707070"/>
+							<path id="Path_4890" data-name="Path 4890" d="M651.272,1520.826a1.428,1.428,0,0,1-1.428,1.428h-1.311a1.428,1.428,0,0,1-1.428-1.428v-1.4a1.424,1.424,0,0,1,.42-1.008h0a1.423,1.423,0,0,1,1.01-.418h1.311a1.423,1.423,0,0,1,1.01.418h0a1.424,1.424,0,0,1,.419,1.008Zm-1.286.142a.2.2,0,0,0,.059-.142v-1.4a.2.2,0,0,0-.056-.141h0a.2.2,0,0,0-.142-.059h-1.311a.2.2,0,0,0-.142.059h0a.2.2,0,0,0-.056.141v1.4a.2.2,0,0,0,.2.2h1.311A.2.2,0,0,0,649.985,1520.968Z" transform="translate(-634.69 -1488.876)" fill="#707070"/>
+							<path id="Path_4891" data-name="Path 4891" d="M661.265,674a2.235,2.235,0,0,1-2.23,2.23h-9.7a2.23,2.23,0,0,1-2.23-2.23v-1.669a2.223,2.223,0,0,1,.653-1.577h0a2.224,2.224,0,0,1,1.575-.654h9.7a2.231,2.231,0,0,1,2.23,2.23Zm-1.519.708a1,1,0,0,0,.291-.708v-1.669a1,1,0,0,0-1-1h-9.7a1,1,0,0,0-.709.291v0a1,1,0,0,0-.293.709V674a1,1,0,0,0,1,1h9.7A1,1,0,0,0,659.746,674.71Z" transform="translate(-634.695 -657.247)" fill="#707070"/>
+							<path id="Path_4892" data-name="Path 4892" d="M551.765,227.976h-1.258v-2.407a.349.349,0,0,0-.1-.246h0a.326.326,0,0,0-.232-.1h-9.143a.329.329,0,0,0-.235.1.346.346,0,0,0-.1.245v2.407h-1.476a1.576,1.576,0,0,0-1.124.471,1.626,1.626,0,0,0-.469,1.147v22.587a1.629,1.629,0,0,0,.468,1.148h0a1.576,1.576,0,0,0,1.124.471h12.541a1.575,1.575,0,0,0,1.124-.469,1.629,1.629,0,0,0,.469-1.149V229.594a1.629,1.629,0,0,0-.469-1.149A1.574,1.574,0,0,0,551.765,227.976Zm-.031-1.228h.031a2.8,2.8,0,0,1,2,.838,2.848,2.848,0,0,1,.824,2.008v22.587a2.847,2.847,0,0,1-.824,2.008,2.8,2.8,0,0,1-2,.838H539.223a2.8,2.8,0,0,1-2-.836v0a2.848,2.848,0,0,1-.824-2.008V229.594a2.85,2.85,0,0,1,.824-2.01,2.8,2.8,0,0,1,2-.836h.248v-1.179a1.572,1.572,0,0,1,.457-1.108,1.547,1.547,0,0,1,1.1-.463h9.143a1.549,1.549,0,0,1,1.105.463v0a1.569,1.569,0,0,1,.455,1.105v1.179Z" transform="translate(-526.111 -219.701)" fill="#707070"/>
+							<path id="Path_4893" data-name="Path 4893" d="M1505.228,608V621.5H1504V608Z" transform="translate(-1475.146 -596.335)" fill="#707070"/>
+							<g id="_389424184" transform="translate(17.496 7.367)">
+							  <path id="_389424304" d="M912,384h4.3v1.228H912Z" transform="translate(-912.001 -383.998)" fill="#707070"/>
+							  <path id="_389424256" d="M912,480h4.3v1.228H912Z" transform="translate(-912.001 -478.158)" fill="#707070"/>
+							</g>
+						  </g>
+						</svg>
+						</span>
+
+                        <span>POS Machines</span>
+                    </a>
+                </li>
+				
+				<li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 32.271 22.89">
+						  <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M9.381,13.195A5.472,5.472,0,1,0,3.909,7.722,5.47,5.47,0,0,0,9.381,13.195Zm3.753,1.564h-.406a7.556,7.556,0,0,1-6.694,0H5.629A5.63,5.63,0,0,0,0,20.387v1.407A2.346,2.346,0,0,0,2.345,24.14H16.417a2.346,2.346,0,0,0,2.345-2.345V20.387A5.63,5.63,0,0,0,13.134,14.759Zm10.32-1.564A4.691,4.691,0,1,0,18.763,8.5,4.692,4.692,0,0,0,23.454,13.195ZM25.8,14.759h-.186a6.162,6.162,0,0,1-4.319,0h-.186a5.427,5.427,0,0,0-2.722.752,7.151,7.151,0,0,1,1.94,4.876v1.876c0,.107-.024.21-.029.313h8.629a2.346,2.346,0,0,0,2.345-2.345A5.47,5.47,0,0,0,25.8,14.759Z" transform="translate(0.5 -1.75)" fill="none" stroke="#777" stroke-width="1"/>
+						</svg></span>
+
+                        <span>Salesperson</span>
+                    </a>
+                </li>
+				
+				<li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 27 27">
+						  <g id="Group_4909" data-name="Group 4909" transform="translate(-75 -68)">
+							<g id="Ellipse_165" data-name="Ellipse 165" transform="translate(75 68)" fill="#fff" stroke="#707070" stroke-width="1">
+							  <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+							  <circle cx="13.5" cy="13.5" r="13" fill="none"/>
+							</g>
+							<path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M5.776,12.556A2.325,2.325,0,1,1,3.45,10.231,2.328,2.328,0,0,1,5.776,12.556ZM1.394.732l.4,7.906a.7.7,0,0,0,.7.663H4.414a.7.7,0,0,0,.7-.663l.4-7.906A.7.7,0,0,0,4.81,0H2.091A.7.7,0,0,0,1.394.732Z" transform="translate(85.475 74)" fill="none" stroke="#777" stroke-width="1"/>
+						  </g>
+						</svg></span>
+
+                        <span>Requests</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25.07 25">
+						  <path id="Icon_ionic-md-settings" data-name="Icon ionic-md-settings" d="M24.488,16.575a7.5,7.5,0,0,0,.061-1.2c0-.42-.061-.78-.061-1.2l2.577-1.98a.551.551,0,0,0,.123-.78l-2.455-4.14A.6.6,0,0,0,24,7.035l-3.068,1.2a8.932,8.932,0,0,0-2.086-1.2l-.43-3.18a.658.658,0,0,0-.614-.48H12.889a.658.658,0,0,0-.614.48l-.491,3.18A10.392,10.392,0,0,0,9.7,8.235L6.63,7.035a.575.575,0,0,0-.737.24l-2.455,4.14a.725.725,0,0,0,.123.78L6.2,14.175c0,.42-.061.78-.061,1.2s.061.78.061,1.2l-2.577,1.98a.551.551,0,0,0-.123.78l2.455,4.14a.6.6,0,0,0,.737.24l3.068-1.2a8.931,8.931,0,0,0,2.086,1.2l.491,3.18a.6.6,0,0,0,.614.48H17.86a.658.658,0,0,0,.614-.48l.491-3.18a10.386,10.386,0,0,0,2.086-1.2l3.068,1.2a.575.575,0,0,0,.737-.24l2.455-4.14a.724.724,0,0,0-.123-.78Zm-9.144,3a4.2,4.2,0,1,1,4.3-4.2A4.222,4.222,0,0,1,15.344,19.575Z" transform="translate(-2.84 -2.875)" fill="none" stroke="#777" stroke-width="1"/>
+						</svg></span>
+
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 23 20.87">
+						  <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M8.625,0V1.653H21.436v17.6H8.625V20.87H23V0ZM5.75,5.963,0,10.435l5.75,4.472V11.333l11.5-.211V9.537H5.75Z" fill="#777"/>
+						</svg></span>
+
+                        <span>Logout</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-flex align-items-center justify-content-between">
+                            <h4 class="page-title mb-0 font-size-18 fw-normal">Welcome to <span class="fw-bold">Regional Manager Dashboard</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+
+                    <div class="col-xl-9 col-lg-12 col-sm-12 col-12">
+						<div class="row employeeCards">
+							<div class="col-md-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-7">
+												<p class="mb-2 text-uppercase">Create New Request</p>
+											</div>
+											<div class="col-5 pl-0">
+												<div class="text-end">
+													<div>
+														<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 27 27">
+														  <path id="Icon_ionic-md-create" data-name="Icon ionic-md-create" d="M4.5,25.875V31.5h5.625L26.7,14.925,21.075,9.3Zm26.55-15.3a1.45,1.45,0,0,0,0-2.1L27.525,4.95a1.45,1.45,0,0,0-2.1,0L22.65,7.725l5.625,5.625Z" transform="translate(-4.5 -4.5)" fill="#84151e"/>
+														</svg>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-7">
+												<p class="mb-2 text-uppercase">POS Machine ASSIGNMENT</p>
+												<h2 class="mb-0 fw-bold">05</h2>
+											</div>
+											<div class="col-5 pl-0">
+												<div class="text-end">
+													<div>
+														<svg xmlns="http://www.w3.org/2000/svg" width="21" height="34" viewBox="0 0 24.416 38.282">
+														  <path id="Path_4881" data-name="Path 4881" d="M810.6,319.119v7.595H800v-7.595h1.515v6.08h7.574v-6.08Z" transform="translate(-793.761 -316.868)" fill="#84151e"/>
+														  <path id="Path_4882" data-name="Path 4882" d="M1172.9,1027.489a1.762,1.762,0,0,1-1.762,1.762h-1.617a1.762,1.762,0,0,1-1.762-1.762v-1.729a1.767,1.767,0,0,1,1.762-1.761h1.617a1.767,1.767,0,0,1,1.762,1.761Zm-1.587.175a.247.247,0,0,0,.072-.175v-1.729a.244.244,0,0,0-.069-.174.25.25,0,0,0-.178-.072h-1.617a.25.25,0,0,0-.178.072.244.244,0,0,0-.069.174v1.729a.247.247,0,0,0,.247.247h1.617A.247.247,0,0,0,1171.315,1027.663Z" transform="translate(-1152.818 -1005.064)" fill="#84151e"/>
+														  <path id="Path_4883" data-name="Path 4883" d="M1172.9,1274.506a1.767,1.767,0,0,1-1.762,1.761h-1.617a1.767,1.767,0,0,1-1.762-1.761v-1.728a1.767,1.767,0,0,1,1.762-1.761h1.617a1.767,1.767,0,0,1,1.762,1.761Zm-1.584.174a.244.244,0,0,0,.069-.174v-1.728a.244.244,0,0,0-.07-.174.249.249,0,0,0-.177-.072h-1.617a.249.249,0,0,0-.178.072.244.244,0,0,0-.069.174v1.728a.244.244,0,0,0,.069.174.249.249,0,0,0,.178.072h1.617A.25.25,0,0,0,1171.318,1274.68Z" transform="translate(-1152.818 -1246.235)" fill="#84151e"/>
+														  <path id="Path_4884" data-name="Path 4884" d="M1172.9,1521.487a1.762,1.762,0,0,1-1.762,1.762h-1.617a1.762,1.762,0,0,1-1.762-1.762v-1.728a1.757,1.757,0,0,1,.518-1.244v0a1.757,1.757,0,0,1,1.246-.516h1.617a1.756,1.756,0,0,1,1.246.516v0a1.757,1.757,0,0,1,.518,1.244Zm-1.587.175a.247.247,0,0,0,.072-.175v-1.728a.244.244,0,0,0-.069-.174h0a.246.246,0,0,0-.175-.072h-1.617a.246.246,0,0,0-.175.072h0a.245.245,0,0,0-.069.174v1.728a.247.247,0,0,0,.247.247h1.617A.247.247,0,0,0,1171.315,1521.662Z" transform="translate(-1152.818 -1487.371)" fill="#84151e"/>
+														  <path id="Path_4885" data-name="Path 4885" d="M906.872,1027.489a1.762,1.762,0,0,1-1.762,1.762h-1.617a1.762,1.762,0,0,1-1.762-1.762v-1.729a1.767,1.767,0,0,1,1.762-1.761h1.617a1.767,1.767,0,0,1,1.762,1.761Zm-1.587.175a.246.246,0,0,0,.072-.175v-1.729a.244.244,0,0,0-.069-.174.25.25,0,0,0-.178-.072h-1.617a.25.25,0,0,0-.178.072.244.244,0,0,0-.069.174v1.729a.247.247,0,0,0,.247.247h1.617A.246.246,0,0,0,905.285,1027.663Z" transform="translate(-893.084 -1005.064)" fill="#84151e"/>
+														  <path id="Path_4886" data-name="Path 4886" d="M906.872,1274.506a1.767,1.767,0,0,1-1.762,1.761h-1.617a1.767,1.767,0,0,1-1.762-1.761v-1.728a1.767,1.767,0,0,1,1.762-1.761h1.617a1.767,1.767,0,0,1,1.762,1.761Zm-1.584.174a.244.244,0,0,0,.069-.174v-1.728a.244.244,0,0,0-.069-.174.249.249,0,0,0-.178-.072h-1.617a.25.25,0,0,0-.178.072.244.244,0,0,0-.069.174v1.728a.243.243,0,0,0,.069.174.249.249,0,0,0,.178.072h1.617a.249.249,0,0,0,.178-.072Z" transform="translate(-893.084 -1246.235)" fill="#84151e"/>
+														  <path id="Path_4887" data-name="Path 4887" d="M906.872,1521.487a1.762,1.762,0,0,1-1.762,1.762h-1.617a1.762,1.762,0,0,1-1.762-1.762v-1.728a1.757,1.757,0,0,1,.518-1.244l0,0a1.756,1.756,0,0,1,1.246-.516h1.617a1.757,1.757,0,0,1,1.246.516l0,0a1.757,1.757,0,0,1,.518,1.244Zm-1.587.175a.246.246,0,0,0,.072-.175v-1.728a.244.244,0,0,0-.069-.174h0a.246.246,0,0,0-.175-.072h-1.617a.246.246,0,0,0-.175.072h0a.244.244,0,0,0-.069.174v1.728a.247.247,0,0,0,.247.247h1.617A.246.246,0,0,0,905.285,1521.662Z" transform="translate(-893.085 -1487.371)" fill="#84151e"/>
+														  <path id="Path_4888" data-name="Path 4888" d="M652.246,1027.489a1.762,1.762,0,0,1-1.762,1.762h-1.617a1.762,1.762,0,0,1-1.762-1.762v-1.729a1.767,1.767,0,0,1,1.762-1.761h1.617a1.767,1.767,0,0,1,1.762,1.761Zm-1.587.175a.246.246,0,0,0,.072-.175v-1.729a.244.244,0,0,0-.069-.174.25.25,0,0,0-.178-.072h-1.617a.25.25,0,0,0-.178.072.244.244,0,0,0-.069.174v1.729a.247.247,0,0,0,.247.247h1.617A.246.246,0,0,0,650.659,1027.663Z" transform="translate(-644.485 -1005.064)" fill="#84151e"/>
+														  <path id="Path_4889" data-name="Path 4889" d="M652.246,1274.506a1.767,1.767,0,0,1-1.762,1.761h-1.617a1.767,1.767,0,0,1-1.762-1.761v-1.728a1.767,1.767,0,0,1,1.762-1.761h1.617a1.767,1.767,0,0,1,1.762,1.761Zm-1.584.174a.244.244,0,0,0,.069-.174v-1.728a.244.244,0,0,0-.069-.174.25.25,0,0,0-.178-.072h-1.617a.249.249,0,0,0-.177.072.244.244,0,0,0-.069.174v1.728a.244.244,0,0,0,.069.174.25.25,0,0,0,.178.072h1.617A.25.25,0,0,0,650.662,1274.68Z" transform="translate(-644.485 -1246.235)" fill="#84151e"/>
+														  <path id="Path_4890" data-name="Path 4890" d="M652.246,1521.487a1.762,1.762,0,0,1-1.762,1.762h-1.617a1.762,1.762,0,0,1-1.762-1.762v-1.728a1.757,1.757,0,0,1,.518-1.244v0a1.756,1.756,0,0,1,1.246-.516h1.617a1.757,1.757,0,0,1,1.246.516l0,0a1.757,1.757,0,0,1,.518,1.244Zm-1.587.175a.247.247,0,0,0,.072-.175v-1.728a.244.244,0,0,0-.069-.174h0a.246.246,0,0,0-.175-.072h-1.617a.246.246,0,0,0-.175.072h0a.244.244,0,0,0-.069.174v1.728a.247.247,0,0,0,.247.247h1.617A.246.246,0,0,0,650.659,1521.662Z" transform="translate(-644.485 -1487.371)" fill="#84151e"/>
+														  <path id="Path_4891" data-name="Path 4891" d="M664.573,674.913a2.757,2.757,0,0,1-2.751,2.751H649.86a2.751,2.751,0,0,1-2.751-2.751v-2.059a2.743,2.743,0,0,1,.806-1.945h0a2.744,2.744,0,0,1,1.944-.807h11.961a2.752,2.752,0,0,1,2.751,2.751Zm-1.874.874a1.23,1.23,0,0,0,.359-.874v-2.059a1.237,1.237,0,0,0-1.237-1.237H649.86a1.231,1.231,0,0,0-.874.359v0a1.233,1.233,0,0,0-.362.874v2.059a1.236,1.236,0,0,0,1.236,1.236h11.961A1.237,1.237,0,0,0,662.7,675.787Z" transform="translate(-644.489 -659.544)" fill="#84151e"/>
+														  <path id="Path_4892" data-name="Path 4892" d="M555.356,228.906H553.8v-2.97a.431.431,0,0,0-.122-.3h0a.4.4,0,0,0-.286-.121h-11.28a.406.406,0,0,0-.29.121.426.426,0,0,0-.12.3v2.97h-1.821a1.945,1.945,0,0,0-1.387.582,2.006,2.006,0,0,0-.579,1.415v27.866a2.01,2.01,0,0,0,.577,1.417h0a1.945,1.945,0,0,0,1.387.581h15.473a1.943,1.943,0,0,0,1.387-.579,2.009,2.009,0,0,0,.578-1.418V230.9a2.009,2.009,0,0,0-.579-1.418A1.942,1.942,0,0,0,555.356,228.906Zm-.038-1.515h.038a3.454,3.454,0,0,1,2.463,1.034,3.514,3.514,0,0,1,1.016,2.477v27.866a3.513,3.513,0,0,1-1.016,2.477,3.455,3.455,0,0,1-2.464,1.034H539.883a3.454,3.454,0,0,1-2.464-1.031v0a3.513,3.513,0,0,1-1.016-2.477V230.9a3.517,3.517,0,0,1,1.016-2.48,3.454,3.454,0,0,1,2.464-1.031h.306v-1.455a1.94,1.94,0,0,1,.564-1.367,1.909,1.909,0,0,1,1.361-.571h11.28a1.911,1.911,0,0,1,1.363.571v0a1.936,1.936,0,0,1,.561,1.364v1.455Z" transform="translate(-536.402 -223.998)" fill="#84151e"/>
+														  <path id="Path_4893" data-name="Path 4893" d="M1505.515,608v16.662H1504V608Z" transform="translate(-1481.099 -598.91)" fill="#84151e"/>
+														  <g id="_389424184" transform="translate(8.89 3.787)">
+															<path id="_389424304" d="M912,384h5.3v1.515H912Z" transform="translate(-912.001 -383.998)" fill="#84151e"/>
+															<path id="_389424256" d="M912,480h5.3v1.515H912Z" transform="translate(-912.001 -477.728)" fill="#84151e"/>
+														  </g>
+														</svg>
+													</div>
+													<p class="text-right viewMore mt-3 mb-0 muteText">
+														View More
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4">
+								<div class="card">
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-7">
+												<p class="mb-2 text-uppercase">Total SALES Team</p>
+												<h2 class="mb-0 fw-bold">345</h2>
+											</div>
+											<div class="col-5 pl-0">
+												<div class="text-end">
+													<div>
+														<svg xmlns="http://www.w3.org/2000/svg" width="37" height="30" viewBox="0 0 45.411 38">
+														  <path id="Icon_awesome-store" data-name="Icon awesome-store" d="M42.328,8.339,37.765,1.055A2.251,2.251,0,0,0,35.859,0H7.453A2.251,2.251,0,0,0,5.548,1.055L.984,8.339C-1.371,12.1.717,17.332,5.119,17.93a7.307,7.307,0,0,0,.963.063,6.943,6.943,0,0,0,5.189-2.327,6.948,6.948,0,0,0,10.378,0,6.948,6.948,0,0,0,10.378,0,6.966,6.966,0,0,0,5.189,2.327,7.228,7.228,0,0,0,.963-.063C42.6,17.339,44.691,12.108,42.328,8.339ZM37.23,20.25a8.921,8.921,0,0,1-2.074-.267V27h-27V19.983a9.315,9.315,0,0,1-2.074.267,9.487,9.487,0,0,1-1.266-.084,8.842,8.842,0,0,1-1.153-.253V33.75A2.248,2.248,0,0,0,5.913,36h31.5a2.248,2.248,0,0,0,2.25-2.25V19.913a7.179,7.179,0,0,1-1.153.253A9.778,9.778,0,0,1,37.23,20.25Z" transform="translate(1.048 1)" fill="none" stroke="#84151e" stroke-width="2"/>
+														</svg>
+
+													</div>
+													<p class="text-right viewMore mt-3 mb-0 muteText">
+														View More
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-body px-0">
+										<h4 class="card-title mb-2 text-uppercase px-3">New Reqeusts</h4>
+
+										<div class="row px-3">
+													<div data-simplebar class="px-0 border-bottom">
+														<a href="" class="text-reset notification-item">
+															<div class="d-flex align-items-start">
+																<div class="font-size-12 col-9 text-muted">
+																	<h6 class="mt-0 mb-1">Paul Dennis</h6>
+																	<p class="mb-1">POS machine not connecting, need support asap. </p>
+																</div>
+																<div class="font-size-12 col-3 text-muted">
+																	<p class="mb-0 text-end mt-4"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+																	<p class="mb-0 text-end blueText">View Details</p>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div data-simplebar class="px-0 border-bottom">
+														<a href="" class="text-reset notification-item">
+															<div class="d-flex align-items-start">
+																<div class="font-size-12 col-9 text-muted">
+																	<h6 class="mt-0 mb-1">Paul Dennis</h6>
+																	<p class="mb-1">POS machine not connecting, need support asap. </p>
+																</div>
+																<div class="font-size-12 col-3 text-muted">
+																	<p class="mb-0 text-end mt-4"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+																	<p class="mb-0 text-end blueText">View Details</p>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div data-simplebar class="px-0 border-bottom">
+														<a href="" class="text-reset notification-item">
+															<div class="d-flex align-items-start">
+																<div class="font-size-12 col-9 text-muted">
+																	<h6 class="mt-0 mb-1">Paul Dennis</h6>
+																	<p class="mb-1">POS machine not connecting, need support asap. </p>
+																</div>
+																<div class="font-size-12 col-3 text-muted">
+																	<p class="mb-0 text-end mt-4"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+																	<p class="mb-0 text-end blueText">View Details</p>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-12 mt-3 px-2 text-center">
+														<button type="button" class="btn blackBtn waves-effect waves-light px-4">View All</button>
+													</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-body">
+											<div class="row align-items-center">
+												<div class="col-7">
+													<p class="mb-3 text-uppercase">POS Machine Stats</p>
+													<p class="mb-2">Total POS Machines Delivered</p>
+												</div>
+												<div class="col-5 pl-0">
+													<div class="text-end">
+														<h2 class="mb-0 mt-4 fw-bold">345</h2>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-body">
+											<div class="row align-items-center">
+												<div class="col-6">
+													<p class="mb-2 text-uppercase">STATISTICS</p>
+													<h1 class="mb-0 fw-bold redText">5,000</h1>
+												</div>
+												<div class="col-6 pl-0">
+													<div class="text-start">
+														<p class="viewMore mt-3 mb-0 muteText">
+															Total
+														</p>
+														<p class="mt-1 mb-0">
+															POS Machines Delivered
+														</p>
+													</div>
+												</div>
+												<hr/ class="mt-2 mb-1">
+												<div class="col-6">
+													<p class="pt-4"><i class="far fa-star muteText me-2"></i>Star Performers</p>
+												</div>
+												<div class="col-6 pl-0">
+													<div class="text-start">
+														<p class="mb-0">
+															No.of POS Machines Delivered
+														</p>
+													</div>
+												</div>
+												<hr/ class="mt-2 mb-1">
+												<div class="col-6">
+													<p class="pt-3">Brendan James</p>
+													<p class="mb-0">Lauren</p>
+												</div>
+												<div class="col-6 pl-0">
+													<div class="text-center">
+														<p class="pt-2">25</p>
+														<p class="mb-0">23</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+								<div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs"
+                                                alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">James Lemire</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs"
+                                                alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Salena Layfield</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            2021 © DSFR Marketplace
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+	
+	<!-- START Chat -->
+	<div class="floating-chat">
+		<i class="fa fa-comments" aria-hidden="true"></i>
+		<div class="chat m-0">
+			<div class="header position-relative">
+				<div class="me-2"><span class="chatUser"><i class="fas fa-user-circle"></i></span></div>
+				<div class="d-block">
+					<p class="title w-100 mb-0 robotofont fw-bold regSecondHead chatUserName">DSFR ADMIN</p>
+					<p class="title w-100 mb-0 fst-italic">DSFR community at your service!</p>
+				</div>
+				<button class="position-absolute">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+							 
+			</div>
+			<ul class="messages">
+				<li class="other">asdasdasasdasdasasdasdasasdasdasasdasdasasdasdasasdasdas</li>
+				<li class="other">Are we dogs???</li>
+				<li class="self">no... we're human</li>
+				<li class="other">are you sure???</li>
+				<li class="self">yes.... -___-</li>
+				<li class="other">if we're not dogs.... we might be monkeys </li>
+				<li class="self">i hate you</li>
+				<li class="other">don't be so negative! here's a banana</li>
+				<li class="self">......... -___-</li>
+			</ul>
+			<div class="footer">
+				<div class="text-box" contenteditable="true" disabled="true"></div>
+				<button id="sendMessage">send</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- END Chat -->
+
+</div>
+<!-- end container-fluid -->
+
+<!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
+<script src="assets/libs/jquery/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+<script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<script src="assets/js/pages/dashboard-2.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+<!-- chatbox js -->
+<script src="assets/js/chatbox.js"></script>
+
+</body>
+
+</html>
