@@ -82,7 +82,7 @@ sup{
 	color:#DD0303;
 }
 .blackText{
-	color:#272727;
+	color:#343a40;
 }
 .redText{
 	color:#84151E;
@@ -407,8 +407,8 @@ body #page-topbar {
     align-items: center;
     position: absolute;
     border-radius: 25px;
-    top: 59%;
-    right: 21px;
+    top: 50px;
+    right: 40px;
 }
 .formIcons i{
     color:#C9C4C4;

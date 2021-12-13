@@ -386,130 +386,164 @@
 								<div class="row pageBack">
 									<a href="#"><i class="fas fa-arrow-left"></i></a>
 								</div>
-
-                                <div class="row">
-                                    <div class="mb-3 col-12">
-										<div class="col-md-4 col-sm-12 col-12 float-start">
-										   <div class="col-12 float-start mt-2 mt-md-4 mb-4">
-											  <p class="addUserPic addStorePic mx-auto mt-1 mb-1">
-												 <span class="addPicIcon"><i class="fas fa-plus"></i></span>
-												 <input type="file" class="custom-file-input" id="customFile" name="filename">
-												 <label class="custom-file-label mb-0" for="customFile"></label>
-											  </p>
-											  <p class="text-center font14 mb-1 pt-3">
-												 Add Store Picture
-											  </p>
-										   </div>
-										</div>
-										<div class="col-md-8 col-sm-12 col-12 float-start mb-4">
-										   <div class="row ps-0 ps-md-4">
-											  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="storename">Store Name</label>
-												 <input type="text" class="form-control" id="storename" placeholder="Enter Store Name">
-											  </div>
-											  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="contact">Contact No.</label>
-												 <input type="text" class="form-control" id="contact" placeholder="Enter Contact No">
-											  </div>
-											  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="storelocation">Store Location</label>
-												 <input type="text" class="form-control" id="storelocation" placeholder="Enter Store Location">
-											  </div>
-											  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="streetdetails">Street Details</label>
-												 <input type="text" class="form-control" id="streetdetails" placeholder="Street Details">
-											  </div>
-											  <div class="col-md-4 col-sm-12 float-start px-2 mb-3">
-												  <label class="form-label" for="city">City</label>
-												  <input type="text" class="form-control" id="city" placeholder="Enter City">
+								<form class="needs-validation" novalidate>
+									<div class="row">
+										<div class="mb-3 col-12">
+											<div class="col-md-4 col-sm-12 col-12 float-start">
+											   <div class="col-12 float-start mt-2 mt-md-4 mb-4">
+												  <p class="addUserPic addStorePic mx-auto mt-1 mb-1">
+													 <span class="addPicIcon"><i class="fas fa-plus"></i></span>
+													 <input type="file" class="custom-file-input" id="customFile" name="filename" required>
+													 <label class="custom-file-label mb-0" for="customFile"></label>
+												  </p>
+												  <p class="text-center font14 mb-1 pt-3">
+													 Add Store Picture
+												  </p>
 											   </div>
-											   <div class="col-md-4 col-sm-12 float-start px-2 mb-3">
-												  <label class="form-label" for="country">Country</label>
-												  <input type="text" class="form-control" id="country" placeholder="Enter Country">
-											   </div>
-											   <div class="col-md-4 col-sm-12 float-start px-2 mb-3">
-												  <label class="form-label" for="zipcode">Zip Code</label>
-												  <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code">
-											   </div>
-											   <div class="col-md-12 col-sm-12 float-start px-2 mb-3">
-													<label class="form-label w-100" for="zipcode">Store Type</label>
-													<div class="form-check mb-2 form-check-inline">
-														<input class="form-check-input" type="radio" name="flexRadioDefault"
-															id="flexRadioDefault1" checked>
-														<label class="form-check-label" for="flexRadioDefault1">
-															Wholesale
-														</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="flexRadioDefault"
-															id="flexRadioDefault2">
-														<label class="form-check-label" for="flexRadioDefault2">
-															Individual
-														</label>
-													</div>
-											   </div>
-										   </div>
-										</div>
-										
-										<div class="col-12 my-4">
-											<div class="row">
-												<h6 class="heliosRounded robotofont fw-bold regSecondHead px-2">ACCOUNT DETAILS</h6>
 											</div>
-										</div>
-										
-										<div class="col-12 float-start mb-4">
-										   <div class="row">
-											  <div class="col-md-5 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="iban">IBAN</label>
-												 <input type="text" class="form-control" id="iban" placeholder="Enter IBAN">
-												 <span class="formIcons">
-													<i class="fas fa-pen"></i>
-												 </span>
-											  </div>
-											  <div class="col-md-7 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="beneficiaryname">Beneficiary Name</label>
-												 <input type="text" class="form-control" id="beneficiaryname" placeholder="Enter Beneficiary Name">
-												 <span class="formIcons">
-													<i class="fas fa-pen"></i>
-												 </span>
-											  </div>
-											  <div class="col-6 w-100 px-2 mb-3">
-												 <label class="form-label" for="bankname">Bank Name</label>
-												 <input type="text" class="form-control" id="bankname" placeholder="Enter Bank Name">
-												 <span class="formIcons">
-													<i class="fas fa-pen"></i>
-												 </span>
-											  </div>
-										   </div>
-										</div>
-										
-										<div class="col-12 my-4">
-											<div class="row">
-												<h6 class="heliosRounded robotofont fw-bold regSecondHead px-2">
-													POS MACHINE REQUIREMENT
-												</h6>
+											<div class="col-md-8 col-sm-12 col-12 float-start mb-4">
+											   <div class="row ps-0 ps-md-4">
+												  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="storename">Store Name</label>
+													 <input type="text" class="form-control" id="storename" placeholder="Enter Store Name" required>
+													 <div class="invalid-feedback">
+														Please provide a valid Store Name
+													</div>
+												  </div>
+												  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="contact">Contact No.</label>
+													 <input type="text" class="form-control" id="contact" placeholder="Enter Contact No" required>
+													 <div class="invalid-feedback">
+														Please provide a valid Contact No.
+													</div>
+												  </div>
+												  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="storelocation">Store Location</label>
+													 <input type="text" class="form-control" id="storelocation" placeholder="Enter Store Location" required>
+													 <div class="invalid-feedback">
+														Please provide a valid Store Location
+													</div>
+												  </div>
+												  <div class="col-md-6 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="streetdetails">Street Details</label>
+													 <input type="text" class="form-control" id="streetdetails" placeholder="Street Details" required>
+													 <div class="invalid-feedback">
+														Please provide a valid Street Details
+													</div>
+												  </div>
+												  <div class="col-md-4 col-sm-12 float-start px-2 mb-3">
+													  <label class="form-label" for="city">City</label>
+													  <input type="text" class="form-control" id="city" placeholder="Enter City" required>
+													  <div class="invalid-feedback">
+														Please provide a valid City
+													</div>
+												   </div>
+												   <div class="col-md-4 col-sm-12 float-start px-2 mb-3">
+													  <label class="form-label" for="country">Country</label>
+													  <input type="text" class="form-control" id="country" placeholder="Enter Country" required>
+													  <div class="invalid-feedback">
+														Please provide a valid Country
+													</div>
+												   </div>
+												   <div class="col-md-4 col-sm-12 float-start px-2 mb-3">
+													  <label class="form-label" for="zipcode">Zip Code</label>
+													  <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code" required>
+													  <div class="invalid-feedback">
+														Please provide a valid Zip Code
+													</div>
+												   </div>
+												   <div class="col-md-12 col-sm-12 float-start px-2 mb-3">
+														<label class="form-label w-100" for="zipcode">Store Type</label>
+														<div class="form-check mb-2 form-check-inline">
+															<input class="form-check-input" type="radio" name="flexRadioDefault"
+																id="flexRadioDefault1" required>
+															<label class="form-check-label" for="flexRadioDefault1">
+																Wholesale
+															</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="radio" name="flexRadioDefault"
+																id="flexRadioDefault2" required>
+															<label class="form-check-label" for="flexRadioDefault2">
+																Individual
+															</label>
+														</div>
+												   </div>
+											   </div>
 											</div>
-										</div>
-										
-										<div class="col-12 float-start mb-4">
-										   <div class="row">
-											  <div class="col-md-5 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label" for="enterquantity">Enter Quantity</label>
-												 <input data-toggle="touchspin" type="text" value="0">
-											  </div>
-											  <div class="col-md-7 col-sm-12 float-start px-2 mb-3">
-												 <label class="form-label fst-italic" for="addremark">* If requirement more than 1, kindly add remarks</label>
-												 <input type="text" class="form-control" id="addremark">
-											  </div>
-											  <div class="col-md-12 col-sm-12 float-start px-0 mt-3 text-end">
-												 <i class="fas fa-trash deletebtn me-2"></i>
-												 <button type="button" class="btn addBtns waves-effect waves-light me-2">Save as Draft</button>
-												 <button type="button" class="btn successBtns waves-effect waves-light me-2">Submit</button>
-											  </div>
-										   </div>
-										</div>
-									 </div>
-                                </div>
+											
+											<div class="col-12 my-4">
+												<div class="row">
+													<h6 class="heliosRounded robotofont fw-bold regSecondHead px-2">ACCOUNT DETAILS</h6>
+												</div>
+											</div>
+											
+											<div class="col-12 float-start mb-4">
+											   <div class="row">
+												  <div class="col-md-5 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="iban">IBAN</label>
+													 <input type="text" class="form-control" id="iban" placeholder="Enter IBAN" required>
+													 <span class="formIcons">
+														<i class="fas fa-pen"></i>
+													 </span>
+													 <div class="invalid-feedback">
+														Please provide a valid IBAN
+													</div>
+												  </div>
+												  <div class="col-md-7 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="beneficiaryname">Beneficiary Name</label>
+													 <input type="text" class="form-control" id="beneficiaryname" placeholder="Enter Beneficiary Name" required>
+													 <span class="formIcons">
+														<i class="fas fa-pen"></i>
+													 </span>
+													 <div class="invalid-feedback">
+														Please provide a valid Beneficiary Name
+													</div>
+												  </div>
+												  <div class="col-6 w-100 px-2 mb-3">
+													 <label class="form-label" for="bankname">Bank Name</label>
+													 <input type="text" class="form-control" id="bankname" placeholder="Enter Bank Name" required>
+													 <span class="formIcons">
+														<i class="fas fa-pen"></i>
+													 </span>
+													 <div class="invalid-feedback">
+														Please provide a valid Bank Name
+													</div>
+												  </div>
+											   </div>
+											</div>
+											
+											<div class="col-12 my-4">
+												<div class="row">
+													<h6 class="heliosRounded robotofont fw-bold regSecondHead px-2">
+														POS MACHINE REQUIREMENT
+													</h6>
+												</div>
+											</div>
+											
+											<div class="col-12 float-start mb-4">
+											   <div class="row">
+												  <div class="col-md-5 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label" for="enterquantity">Enter Quantity</label>
+													 <input data-toggle="touchspin" type="text" value="0" required>
+												  </div>
+												  <div class="col-md-7 col-sm-12 float-start px-2 mb-3">
+													 <label class="form-label fst-italic" for="addremark">* If requirement more than 1, kindly add remarks</label>
+													 <input type="text" class="form-control" id="addremark" required>
+													 <div class="invalid-feedback">
+														Please provide remarks
+													</div>
+												  </div>
+												  <div class="col-md-12 col-sm-12 float-start px-0 mt-3 text-end">
+													 <i class="fas fa-trash deletebtn me-2"></i>
+													 <button type="submit" class="btn addBtns waves-effect waves-light me-2">Save as Draft</button>
+													 <button type="submit" class="btn successBtns waves-effect waves-light me-2">Submit</button>
+												  </div>
+											   </div>
+											</div>
+										 </div>
+									</div>
+								</form>
                             </div>
                         </div>
                     </div>
@@ -590,6 +624,12 @@
 
 <!-- form advanced init -->
 <script src="assets/js/pages/form-advanced.init.js"></script>
+
+<!-- parsley plugin -->
+<script src="assets/libs/parsleyjs/parsley.min.js"></script>
+
+<!-- validation init -->
+<script src="assets/js/pages/form-validation.init.js"></script>
 
 <!-- App js -->
 <script src="assets/js/app.js"></script>
