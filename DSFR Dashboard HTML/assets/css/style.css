@@ -430,6 +430,9 @@ body #page-topbar {
 .downloadDocsWrap{
 	line-height:30px;
 }
+.downloadDocsEditWrap{
+	line-height:20px;
+}
 
 /*My stores page CSS*/
 .tableSearchWrap{

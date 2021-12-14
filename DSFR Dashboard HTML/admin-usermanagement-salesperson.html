@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>DSFR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<!-- Style Css-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<!-- chatbox Css-->
+    <link href="assets/css/chatbox.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-layout="detached" data-topbar="colored">
+
+
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+<div class="container-fluid">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="container-fluid">
+                    <div class="float-end">
+
+                        <div class="dropdown d-inline-block d-lg-none ms-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+
+                                <form class="p-3">
+                                    <div class="m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i
+                                                        class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge rounded-pill bg-danger ">3</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs"
+                                                alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">James Lemire</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex align-items-start">
+                                            <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs"
+                                                alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mt-0 mb-1">Salena Layfield</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 " href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1">Patrick</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i>
+                                    Profile</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> My
+                                    Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i
+                                        class="bx bx-wrench font-size-16 align-middle me-1"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i
+                                        class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="50">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="50">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item toggle-btn waves-effect"
+                            id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form>
+
+                        <div class="dropdown dropdown-mega d-none d-lg-inline-block ms-2">
+                            <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
+                                aria-haspopup="false" aria-expanded="false">
+                                DSFR Marketplace
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header> <!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+
+    <div class="h-100">
+
+        <div class="user-wid text-center pt-4 pb-2">
+            <div class="user-img">
+                <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-md mx-auto rounded-circle">
+            </div>
+
+            <div class="mt-3">
+
+                <a href="#" class="text-dark fw-bold font-size-16">Admin</a>
+
+            </div>
+        </div>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 25">
+						  <g id="Icon_material-dashboard" data-name="Icon material-dashboard" transform="translate(0.5 0.5)">
+							<path id="Icon_material-dashboard-2" data-name="Icon material-dashboard" d="M4.5,17.833H15.167V4.5H4.5ZM4.5,28.5H15.167v-8H4.5Zm13.333,0H28.5V15.167H17.833Zm0-24v8H28.5v-8Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#707070" stroke-width="1"/>
+						  </g>
+						</svg></span>
+
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+				
+				<li>
+                    <a href="#" class="has-arrow waves-effect" aria-expanded="false">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 32.271 22.89">
+						  <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M9.381,13.195A5.472,5.472,0,1,0,3.909,7.722,5.47,5.47,0,0,0,9.381,13.195Zm3.753,1.564h-.406a7.556,7.556,0,0,1-6.694,0H5.629A5.63,5.63,0,0,0,0,20.387v1.407A2.346,2.346,0,0,0,2.345,24.14H16.417a2.346,2.346,0,0,0,2.345-2.345V20.387A5.63,5.63,0,0,0,13.134,14.759Zm10.32-1.564A4.691,4.691,0,1,0,18.763,8.5,4.692,4.692,0,0,0,23.454,13.195ZM25.8,14.759h-.186a6.162,6.162,0,0,1-4.319,0h-.186a5.427,5.427,0,0,0-2.722.752,7.151,7.151,0,0,1,1.94,4.876v1.876c0,.107-.024.21-.029.313h8.629a2.346,2.346,0,0,0,2.345-2.345A5.47,5.47,0,0,0,25.8,14.759Z" transform="translate(0.5 -1.75)" fill="none" stroke="#777" stroke-width="1"/>
+						</svg></span>
+                        <span>User Management</span>
+                    </a>
+                    <ul class="sub-menu mm-collapse mm-show" aria-expanded="false">
+                        <li><a href="#" class="waves-effect">
+								<span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 32.271 22.89">
+								  <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M9.381,13.195A5.472,5.472,0,1,0,3.909,7.722,5.47,5.47,0,0,0,9.381,13.195Zm3.753,1.564h-.406a7.556,7.556,0,0,1-6.694,0H5.629A5.63,5.63,0,0,0,0,20.387v1.407A2.346,2.346,0,0,0,2.345,24.14H16.417a2.346,2.346,0,0,0,2.345-2.345V20.387A5.63,5.63,0,0,0,13.134,14.759Zm10.32-1.564A4.691,4.691,0,1,0,18.763,8.5,4.692,4.692,0,0,0,23.454,13.195ZM25.8,14.759h-.186a6.162,6.162,0,0,1-4.319,0h-.186a5.427,5.427,0,0,0-2.722.752,7.151,7.151,0,0,1,1.94,4.876v1.876c0,.107-.024.21-.029.313h8.629a2.346,2.346,0,0,0,2.345-2.345A5.47,5.47,0,0,0,25.8,14.759Z" transform="translate(0.5 -1.75)" fill="none" stroke="#777" stroke-width="1"/>
+								</svg></span>
+								<span>Employee</span>
+							</a>
+						</li>
+                        <li><a href="#" class="waves-effect">
+								<span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 32.271 22.89">
+								  <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M9.381,13.195A5.472,5.472,0,1,0,3.909,7.722,5.47,5.47,0,0,0,9.381,13.195Zm3.753,1.564h-.406a7.556,7.556,0,0,1-6.694,0H5.629A5.63,5.63,0,0,0,0,20.387v1.407A2.346,2.346,0,0,0,2.345,24.14H16.417a2.346,2.346,0,0,0,2.345-2.345V20.387A5.63,5.63,0,0,0,13.134,14.759Zm10.32-1.564A4.691,4.691,0,1,0,18.763,8.5,4.692,4.692,0,0,0,23.454,13.195ZM25.8,14.759h-.186a6.162,6.162,0,0,1-4.319,0h-.186a5.427,5.427,0,0,0-2.722.752,7.151,7.151,0,0,1,1.94,4.876v1.876c0,.107-.024.21-.029.313h8.629a2.346,2.346,0,0,0,2.345-2.345A5.47,5.47,0,0,0,25.8,14.759Z" transform="translate(0.5 -1.75)" fill="none" stroke="#777" stroke-width="1"/>
+								</svg></span>
+								<span>Regional Manager</span>
+							</a>
+						</li>
+						<li><a href="#" class="waves-effect">
+								<span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 32.271 22.89">
+								  <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M9.381,13.195A5.472,5.472,0,1,0,3.909,7.722,5.47,5.47,0,0,0,9.381,13.195Zm3.753,1.564h-.406a7.556,7.556,0,0,1-6.694,0H5.629A5.63,5.63,0,0,0,0,20.387v1.407A2.346,2.346,0,0,0,2.345,24.14H16.417a2.346,2.346,0,0,0,2.345-2.345V20.387A5.63,5.63,0,0,0,13.134,14.759Zm10.32-1.564A4.691,4.691,0,1,0,18.763,8.5,4.692,4.692,0,0,0,23.454,13.195ZM25.8,14.759h-.186a6.162,6.162,0,0,1-4.319,0h-.186a5.427,5.427,0,0,0-2.722.752,7.151,7.151,0,0,1,1.94,4.876v1.876c0,.107-.024.21-.029.313h8.629a2.346,2.346,0,0,0,2.345-2.345A5.47,5.47,0,0,0,25.8,14.759Z" transform="translate(0.5 -1.75)" fill="none" stroke="#777" stroke-width="1"/>
+								</svg></span>
+								<span>Salesperson</span>
+							</a>
+						</li>
+                    </ul>
+                </li>
+				
+				<li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 27 27">
+						  <g id="Group_4909" data-name="Group 4909" transform="translate(-75 -68)">
+							<g id="Ellipse_165" data-name="Ellipse 165" transform="translate(75 68)" fill="#fff" stroke="#707070" stroke-width="1">
+							  <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+							  <circle cx="13.5" cy="13.5" r="13" fill="none"/>
+							</g>
+							<path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M5.776,12.556A2.325,2.325,0,1,1,3.45,10.231,2.328,2.328,0,0,1,5.776,12.556ZM1.394.732l.4,7.906a.7.7,0,0,0,.7.663H4.414a.7.7,0,0,0,.7-.663l.4-7.906A.7.7,0,0,0,4.81,0H2.091A.7.7,0,0,0,1.394.732Z" transform="translate(85.475 74)" fill="none" stroke="#777" stroke-width="1"/>
+						  </g>
+						</svg></span>
+
+                        <span>Requests</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg id="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" 	viewBox="0 0 27 27">
+						  <path id="Path_12" data-name="Path 12" d="M51.38,55.464a.606.606,0,0,1-.224-.043.614.614,0,0,1-.347-.8,10.483,10.483,0,0,1,6.46-6.131.614.614,0,0,1,.388,1.165,9.257,9.257,0,0,0-5.705,5.414A.614.614,0,0,1,51.38,55.464Z" transform="translate(-46.761 -44.639)" fill="#777"/>
+						  <path id="Path_13" data-name="Path 13" d="M168.113,178.557a.614.614,0,1,1,0-1.228,9.289,9.289,0,0,0,9.278-9.278.614.614,0,0,1,1.228,0A10.517,10.517,0,0,1,168.113,178.557Z" transform="translate(-154.907 -154.85)" fill="#777"/>
+						  <path id="Path_14" data-name="Path 14" d="M13.5,27a13.5,13.5,0,0,1,0-27,13.369,13.369,0,0,1,5.97,1.388.6.6,0,0,1-.532,1.076A12.176,12.176,0,0,0,13.5,1.2,12.3,12.3,0,1,0,23.847,6.847a.6.6,0,0,1,1.009-.65A13.5,13.5,0,0,1,13.5,27Z" fill="#777"/>
+						  <path id="Path_15" data-name="Path 15" d="M265.211,24.987h-.9v-.9a.614.614,0,1,0-1.228,0v.9h-.9a.614.614,0,1,0,0,1.228h.9v.9a.614.614,0,1,0,1.228,0v-.9h.9a.614.614,0,0,0,0-1.228Z" transform="translate(-241.553 -21.62)" fill="#777"/>
+						  <path id="Path_16" data-name="Path 16" d="M102.971,120.239a.6.6,0,0,0-.007-.067c0-.019-.009-.038-.014-.056s-.011-.039-.018-.058a.616.616,0,0,0-.026-.056.573.573,0,0,0-.027-.05.65.65,0,0,0-.041-.055c-.008-.01-.014-.021-.023-.031l-.01-.009a.663.663,0,0,0-.051-.046c-.014-.012-.027-.024-.041-.034a.615.615,0,0,0-.053-.031c-.017-.01-.033-.02-.05-.027a.585.585,0,0,0-.056-.02c-.019-.006-.037-.013-.056-.017a.57.57,0,0,0-.056-.008.642.642,0,0,0-.064-.006l-.015,0H98.953a.614.614,0,1,0,0,1.228h1.819l-4.5,4.081-1.346-1.56a.614.614,0,0,0-.878-.053l-4.381,3.976a.614.614,0,1,0,.825.909l3.915-3.553,1.346,1.56a.614.614,0,0,0,.877.053l5.112-4.64v1.811a.614.614,0,1,0,1.228,0v-3.2C102.975,120.265,102.972,120.252,102.971,120.239Z" transform="translate(-82.723 -110.534)" fill="#777"/>
+						</svg>
+						</span>
+
+                        <span>Analytics</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.048" viewBox="0 0 24 19.048">
+						  <g id="Group_4917" data-name="Group 4917" transform="translate(-1295.357 1150.978)">
+							<path id="Path_4859" data-name="Path 4859" d="M1331.9-858.886l-.531-1.394-.924-2.424-.44.165c-.5.189-1.026.385-1.529.6a2.03,2.03,0,0,0-1.081,2.662,2.006,2.006,0,0,0,1.87,1.256,2.091,2.091,0,0,0,.736-.135c.508-.191,1.024-.389,1.523-.582Z" transform="translate(-30.809 -278.617)" fill="none"/>
+							<path id="Path_4860" data-name="Path 4860" d="M1598.756-1076.8c-.414.445-.841.9-1.269,1.351.689,1.8,1.386,3.63,2.061,5.4l.478,1.254.315.825c.322.845.656,1.719.981,2.58.329.021.66.051.98.079l.406.036.457.038-2.434-6.384Z" transform="translate(-292.061 -71.695)" fill="none"/>
+							<path id="Path_4861" data-name="Path 4861" d="M1456.864-718.343l.025-.01-.014-.019-.355-.469-.543-.718-.341-.451c-.377-.5-.766-1.013-1.152-1.519-.347.129-.689.261-1.046.4l.979,1.308,1.407,1.88.024-.008c.224-.088.451-.175.671-.259Z" transform="translate(-152.809 -415.062)" fill="none"/>
+							<path id="Path_4862" data-name="Path 4862" d="M1454.725-1010.562l-.893.952c-1.054,1.125-2.144,2.287-3.219,3.431.1.245.189.492.28.732q.067.178.134.355l.167.439c.333.873.676,1.775,1.019,2.662.667.062,1.344.12,2,.175l.664.057,1.354.117,1.63.141.327.027-1.846-4.842Z" transform="translate(-150.085 -135.712)" fill="none"/>
+							<path id="Path_4863" data-name="Path 4863" d="M1702.6-990a3.71,3.71,0,0,0,.422-1.15,3.683,3.683,0,0,0-.224-2.153,3.784,3.784,0,0,0-2.232-2.037l.524,1.376Z" transform="translate(-391.691 -150.427)" fill="none"/>
+							<path id="Path_4864" data-name="Path 4864" d="M1308.466-1116.85c-.25-.667-.509-1.343-.759-2l-.188-.493a.656.656,0,0,0-.6-.473.712.712,0,0,0-.521.254c-.4.428-.813.864-1.208,1.286l-.5.533-.69.735c-1.414,1.508-2.877,3.067-4.317,4.6a.322.322,0,0,1-.106.077c-.638.25-1.314.511-2.01.774a3.776,3.776,0,0,0-1.06.571,3.11,3.11,0,0,0-1.152,2.381,3.046,3.046,0,0,0,1.049,2.369,3.021,3.021,0,0,0,2,.789,3.429,3.429,0,0,0,1.2-.233c.662.891,1.337,1.793,1.991,2.665l.567.757a1.015,1.015,0,0,0,.832.448,1.17,1.17,0,0,0,.41-.078c.4-.15.748-.283,1.067-.408a1.076,1.076,0,0,0,.678-.7,1.075,1.075,0,0,0-.211-.95l-1.877-2.486,2.8.24,1.436.125,1.516.132.441.038c.791.068,1.608.139,2.413.2.031,0,.062,0,.091,0a.65.65,0,0,0,.567-.262.694.694,0,0,0,.038-.671c-.318-.841-.63-1.663-.944-2.473a4.733,4.733,0,0,0,1.092-2.747,4.705,4.705,0,0,0-1.058-3.308A4.72,4.72,0,0,0,1308.466-1116.85Zm2.7,3.244a3.686,3.686,0,0,1,.224,2.153,3.7,3.7,0,0,1-.422,1.15l-1.51-3.963-.524-1.376A3.785,3.785,0,0,1,1311.163-1113.607Zm-.464,6.759-.406-.036c-.32-.029-.651-.058-.98-.079-.325-.861-.659-1.735-.981-2.58l-.315-.825-.478-1.254c-.675-1.77-1.373-3.6-2.061-5.4.428-.447.855-.905,1.269-1.351l1.975,5.179,2.435,6.384Zm-2.892-.245-1.631-.141-1.354-.117-.664-.057c-.656-.056-1.333-.114-2-.175-.343-.887-.687-1.789-1.019-2.662l-.167-.439-.135-.355c-.091-.24-.184-.488-.28-.732,1.074-1.144,2.164-2.306,3.219-3.431l.893-.952,1.619,4.245,1.846,4.842Zm-4.768,4.208-1.407-1.88-.979-1.308c.357-.138.7-.27,1.047-.4.386.506.775,1.021,1.152,1.519l.341.451.543.718.355.469.014.019-.025.01-.345.132c-.22.084-.447.171-.671.259Zm-4.587-3.636a2.005,2.005,0,0,1-1.87-1.256,2.03,2.03,0,0,1,1.081-2.662c.5-.21,1.024-.406,1.529-.6l.44-.166.925,2.424.531,1.393-.377.145c-.5.192-1.014.391-1.523.582A2.088,2.088,0,0,1,1298.452-1106.521Z" transform="translate(0 -30.121)" fill="#777"/>
+							<path id="Path_4865" data-name="Path 4865" d="M1896.934-881.415c-.036,0-.067,0-.093-.006h-.027l-.713-.039c-.669-.037-1.36-.075-2.039-.114l-.076,0a.547.547,0,0,0-.626.508c-.006.124.02.531.633.564.488.027.985.052,1.465.077l.239.012v0l.335.016.241.012c.2.01.4.02.6.027h.021a.515.515,0,0,0,.528-.527A.517.517,0,0,0,1896.934-881.415Z" transform="translate(-578.064 -260.377)" fill="#777"/>
+							<path id="Path_4866" data-name="Path 4866" d="M1815.11-1147.809a.581.581,0,0,0,.414-.191l.772-.772c.421-.421.856-.856,1.283-1.285a.832.832,0,0,0,.128-.176c.012-.021.024-.04.036-.059l.14-.214-.17-.192c-.007-.007-.019-.024-.029-.038a.5.5,0,0,0-.31-.231.583.583,0,0,0-.114-.011.608.608,0,0,0-.42.158c-.7.69-1.4,1.39-2.074,2.067a.6.6,0,0,0-.19.445.507.507,0,0,0,.189.369A.534.534,0,0,0,1815.11-1147.809Z" transform="translate(-501.919)" fill="#777"/>
+							<path id="Path_4867" data-name="Path 4867" d="M1874.6-1018.327a.626.626,0,0,0,.261-.214l.008-.011.1-.1,0-.144a.535.535,0,0,0-.533-.564.649.649,0,0,0-.23.044c-.59.225-1.188.455-1.766.678l-.593.228a.524.524,0,0,0-.34.7.5.5,0,0,0,.482.341.644.644,0,0,0,.229-.044C1873.1-1017.745,1873.843-1018.031,1874.6-1018.327Z" transform="translate(-556.893 -127.214)" fill="#777"/>
+							<path id="Path_4868" data-name="Path 4868" d="M1821.321-975.526a.628.628,0,0,0,.22-.2l.006-.008.08-.089,0-.128a.6.6,0,0,0-.166-.435.5.5,0,0,0-.354-.15.5.5,0,0,0-.139.02,3.449,3.449,0,0,0-.5.189.51.51,0,0,0-.256.693.515.515,0,0,0,.476.319.578.578,0,0,0,.183-.03A3.2,3.2,0,0,0,1821.321-975.526Z" transform="translate(-507.298 -168.598)" fill="#777"/>
+							<path id="Path_4869" data-name="Path 4869" d="M1838.931-884.54a1.83,1.83,0,0,0-.4-.044,1.642,1.642,0,0,0-.2.012.6.6,0,0,0-.456.415.471.471,0,0,0,.049.388.534.534,0,0,0,.366.238c.083.015.164.021.223.025l.048,0,.016,0h.016c.023,0,.047,0,.074,0s.063.005.1.005a.483.483,0,0,0,.239-.057.6.6,0,0,0,.321-.473A.567.567,0,0,0,1838.931-884.54Z" transform="translate(-524.405 -257.47)" fill="#777"/>
+							<path id="Path_4870" data-name="Path 4870" d="M1776.717-1055.675a.577.577,0,0,0-.313-.088.536.536,0,0,0-.293.081,1.525,1.525,0,0,0-.379.369.586.586,0,0,0-.059.534.515.515,0,0,0,.247.255l.012.007.112.082.144-.028.031,0a.4.4,0,0,0,.252-.109l.07-.068a2.673,2.673,0,0,0,.317-.344.428.428,0,0,0,.066-.339A.536.536,0,0,0,1776.717-1055.675Z" transform="translate(-464.254 -92.025)" fill="#777"/>
+						  </g>
+						</svg>
+						</span>
+
+                        <span>Marketing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25.07 25">
+						  <path id="Icon_ionic-md-settings" data-name="Icon ionic-md-settings" d="M24.488,16.575a7.5,7.5,0,0,0,.061-1.2c0-.42-.061-.78-.061-1.2l2.577-1.98a.551.551,0,0,0,.123-.78l-2.455-4.14A.6.6,0,0,0,24,7.035l-3.068,1.2a8.932,8.932,0,0,0-2.086-1.2l-.43-3.18a.658.658,0,0,0-.614-.48H12.889a.658.658,0,0,0-.614.48l-.491,3.18A10.392,10.392,0,0,0,9.7,8.235L6.63,7.035a.575.575,0,0,0-.737.24l-2.455,4.14a.725.725,0,0,0,.123.78L6.2,14.175c0,.42-.061.78-.061,1.2s.061.78.061,1.2l-2.577,1.98a.551.551,0,0,0-.123.78l2.455,4.14a.6.6,0,0,0,.737.24l3.068-1.2a8.931,8.931,0,0,0,2.086,1.2l.491,3.18a.6.6,0,0,0,.614.48H17.86a.658.658,0,0,0,.614-.48l.491-3.18a10.386,10.386,0,0,0,2.086-1.2l3.068,1.2a.575.575,0,0,0,.737-.24l2.455-4.14a.724.724,0,0,0-.123-.78Zm-9.144,3a4.2,4.2,0,1,1,4.3-4.2A4.222,4.222,0,0,1,15.344,19.575Z" transform="translate(-2.84 -2.875)" fill="none" stroke="#777" stroke-width="1"/>
+						</svg></span>
+
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="waves-effect">
+                        <span class="dashIcons me-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 23 20.87">
+						  <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M8.625,0V1.653H21.436v17.6H8.625V20.87H23V0ZM5.75,5.963,0,10.435l5.75,4.472V11.333l11.5-.211V9.537H5.75Z" fill="#777"/>
+						</svg></span>
+
+                        <span>Logout</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-flex align-items-center justify-content-between">
+                            <h4 class="page-title mb-0 font-size-18 fw-normal"><span class="fw-bold">Salesperson</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+
+                    <div class="col-xl-12">
+						
+						<div class="card tableCard">
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+										<div class="position-absolute tableSearchWrap">
+											<button type="button" class="btn addBtns waves-effect waves-light mt-3"><i class="fas fa-plus"></i> Add New Salesperson</button>
+										</div>
+										
+										<!-- Tab panes -->
+										<div class="tab-content text-muted mt-5">
+											<div class="tab-pane active" id="new1" role="tabpanel">
+												<div class="table-responsive">
+													<table class="table table-striped mb-0 tablesWrap">
+														<thead>
+															<tr>
+																<th>First name</th>
+																<th>Last name</th>
+																<th>Contact No.</th>
+																<th>Email-ID</th>
+																<th>Last Login</th>
+																<th>Status</th>
+																<th></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Ellen</td>
+																<td>Musk</td>
+																<td>+41-765-559-071</td>
+																<td>ellen.musk@gmail.com</td>
+																<td>
+																	<p class="mb-0">07/07/2021</p>
+																	<p class="mb-0">12:00 PM</p>
+																</td>
+																<td><span class="badge rounded bg-success">Active</span></td>
+																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
+															</tr>
+															<tr>
+																<td>Ellen</td>
+																<td>Musk</td>
+																<td>+41-765-559-071</td>
+																<td>ellen.musk@gmail.com</td>
+																<td>
+																	<p class="mb-0">07/07/2021</p>
+																	<p class="mb-0">12:00 PM</p>
+																</td>
+																<td><span class="badge rounded bg-success">Active</span></td>
+																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
+															</tr>
+															<tr>
+																<td>Paul</td>
+																<td>James</td>
+																<td>+41-765-559-071</td>
+																<td>paul.j@gmail.com</td>
+																<td>
+																	<p class="mb-0">07/07/2021</p>
+																	<p class="mb-0">12:00 PM</p>
+																</td>
+																<td><span class="badge rounded bg-success">Active</span></td>
+																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
+															</tr>
+															<tr>
+																<td>Paul</td>
+																<td>James</td>
+																<td>+41-765-559-071</td>
+																<td>paul.j@gmail.com</td>
+																<td>
+																	<p class="mb-0">07/07/2021</p>
+																	<p class="mb-0">12:00 PM</p>
+																</td>
+																<td><span class="badge rounded bg-danger">Disabled</span></td>
+																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
+															</tr>
+															<tr>
+																<td>Ellen</td>
+																<td>Musk</td>
+																<td>+41-765-559-071</td>
+																<td>ellen.musk@gmail.com</td>
+																<td>
+																	<p class="mb-0">07/07/2021</p>
+																	<p class="mb-0">12:00 PM</p>
+																</td>
+																<td><span class="badge rounded bg-danger">Disabled</span></td>
+																<td><button type="button" class="btn btn-sm waves-effect waves-light">View More</button></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										
+									 </div>
+                                </div>
+								
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            2021 © DSFR Marketplace
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+	
+	<!-- START Chat -->
+	<div class="floating-chat">
+		<i class="fa fa-comments" aria-hidden="true"></i>
+		<div class="chat m-0">
+			<div class="header position-relative">
+				<div class="me-2"><span class="chatUser"><i class="fas fa-user-circle"></i></span></div>
+				<div class="d-block">
+					<p class="title w-100 mb-0 robotofont fw-bold regSecondHead chatUserName">DSFR ADMIN</p>
+					<p class="title w-100 mb-0 fst-italic">DSFR community at your service!</p>
+				</div>
+				<button class="position-absolute">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+							 
+			</div>
+			<ul class="messages">
+				<li class="other">asdasdasasdasdasasdasdasasdasdasasdasdasasdasdasasdasdas</li>
+				<li class="other">Are we dogs???</li>
+				<li class="self">no... we're human</li>
+				<li class="other">are you sure???</li>
+				<li class="self">yes.... -___-</li>
+				<li class="other">if we're not dogs.... we might be monkeys </li>
+				<li class="self">i hate you</li>
+				<li class="other">don't be so negative! here's a banana</li>
+				<li class="self">......... -___-</li>
+			</ul>
+			<div class="footer">
+				<div class="text-box" contenteditable="true" disabled="true"></div>
+				<button id="sendMessage">send</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- END Chat -->
+
+</div>
+<!-- end container-fluid -->
+
+<!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
+<script src="assets/libs/jquery/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+<script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<script src="assets/js/pages/dashboard-2.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+<!-- chatbox js -->
+<script src="assets/js/chatbox.js"></script>
+
+</body>
+
+</html>

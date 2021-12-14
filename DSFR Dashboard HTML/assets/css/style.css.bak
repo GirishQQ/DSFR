@@ -407,7 +407,7 @@ body #page-topbar {
     align-items: center;
     position: absolute;
     border-radius: 25px;
-    top: 50px;
+    top: 42px;
     right: 40px;
 }
 .formIcons i{
@@ -429,6 +429,9 @@ body #page-topbar {
 }
 .downloadDocsWrap{
 	line-height:30px;
+}
+.downloadDocsEditWrap{
+	line-height:normal;
 }
 
 /*My stores page CSS*/
