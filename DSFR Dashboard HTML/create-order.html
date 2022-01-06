@@ -353,7 +353,7 @@
             <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
-            <div class="main-content">
+            <div class="main-content createOrderWrap">
 
                 <div class="page-content">
                     <form>
@@ -378,22 +378,55 @@
                                         </div>
 
                                         <div class="row">
-                                        </div>
-
-                                        <div class="row">
                                             <div class="col-12 float-start mt-3">
                                                 <div class="col-6 float-start">
                                                     <label class="form-label mb-3" for="products">Products</label>
                                                 </div>
                                                 <div class="col-6 float-start text-end">
-                                                    <a href="#" class="mb-3 text-decoration-underline blueText mb-3" data-bs-toggle="modal" data-bs-target="#addcustommodal">Add custom item</a>
+                                                    <a href="#" class="mb-3 text-decoration-underline blueText mb-3">Add custom item</a>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-8 float-start">
                                                 <input type="search" class="form-control" id="searchproduct" placeholder="Search Products">
+                                                <span class="formIcons searchIcon me-4">
+													<i toggle="#password-field" class="fas fa-search"></i>
+												</span>
                                             </div>
                                             <div class="col-md-3 col-4 float-start mb-3">
-                                                <button type="button" class="btn addBtns waves-effect waves-light w-100">Browse Files</button>
+                                                <button type="button" class="btn addBtns waves-effect waves-light w-100" data-bs-toggle="modal" data-bs-target="#productBrows">Browse Files</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="table-responsive">
+                                                <table class="table mb-0 tablesWrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2">Product</th>
+                                                            <th>Quantity</th>
+                                                            <th>Total</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="createOrderproductImgs mb-0">
+                                                                    <img src="assets/images/small/img-6.jpg">
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <p class="mb-0">AAAAAAAAAAA</p>
+                                                                <p class="mb-0">zz</p>
+                                                                <p class="mb-0">SKU: 100000</p>
+                                                                <p class="mb-0">CHF 999.00</p>
+                                                            </td>
+                                                            <td><input type="number" id="quantityAdd" class="form-control w-50" aria-describedby="quantityAdd"></td>
+                                                            <td>CHF 0.00</td>
+                                                            <td><i class="fas fa-times"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -452,7 +485,7 @@
 
                             </div>
 
-                            <div class="col-xl-3">
+                            <div class="col-xl-3 rightPart">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
@@ -474,7 +507,9 @@
                                             <i toggle="#password-field" class="fas fa-search"></i>
                                         </span>
                                             </div>
-
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#addNewCustomer">
+                                                <h6 class="card-title mb-2 mt-2 px-2 text-decoration-underline"><i class="fas fa-plus-circle me-1"></i> Add New Customer</h6>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -544,7 +579,7 @@
                         <!-- end row -->
                         <div class="row">
                             <div class="col-xl-9 col-lg-12 col-md-12 col-12 float-start px-2 mb-3 text-end">
-                                <button type="button" class="btn successBtns waves-effect waves-light mb-3 px-4">Submit</button>
+                                <button type="submit" class="btn successBtns waves-effect waves-light mb-3 px-4">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -602,75 +637,343 @@
         <!-- END Chat -->
 
         <!-- START Add Custom Product Modal-->
-        <!-- Modal -->
+        <!-- Modal
         <div class="modal fade" id="addcustommodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="card-title fw-bold" id="exampleModalLabel">Add custom item</h5>
+                <div class="modal-content p-2">
+                    <form class="needs-validation" novalidate>
+                        <div class="modal-header border-bottom-0">
+                            <h5 class="card-title fw-bold" id="exampleModalLabel">Add custom item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-0">
+                            <div class="row px-1">
+                                <div class="col-md-5 col-sm-6 col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="itemname">Item name</label>
+                                    <input type="text" class="form-control" id="itemName" placeholder="" required>
+                                    <div class="invalid-feedback">Please provide Item name</div>
+                                </div>
+                                <div class="col-md-4 col-sm-3 col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="price">Price</label>
+                                    <input type="text" class="form-control" id="price" placeholder="CHF 0.00" required>
+                                    <div class="invalid-feedback">Please provide Price</div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="quantity">Quantity</label>
+                                    <input type="number" class="form-control" id="quantity" placeholder="0" required>
+                                    <div class="invalid-feedback">Please provide Quantity</div>
+                                </div>
+                            </div>
+
+                            <div class="row px-1">
+                                <div class="col-12 float-start px-2 mb-3 mt-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="taxableItem" required>
+                                        <label class="form-check-label" for="taxableItem">
+													Item is taxable
+												  </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="shippingItem" required>
+                                        <label class="form-check-label" for="shippingItem">
+													Item requires shipping
+												  </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row px-1">
+                                <div class="col-md-4 col-sm-7 col-7 float-start px-2 mb-3">
+                                    <label class="form-label" for="weight">Weight</label>
+                                    <input type="text" class="form-control" id="weight" placeholder="0.0" required>
+                                    <div class="invalid-feedback">Please provide Weight</div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-5 col-5 float-start px-2 mb-3 ">
+                                    <label class="form-label" for="weight">&nbsp;</label>
+                                    <select class="form-select radius8" aria-label="Default select example" required>
+													<option selected>kg</option>
+													<option>lb</option>
+													<option>oz</option>
+													<option>g</option>
+												</select>
+                                    <div class="invalid-feedback">Please provide</div>
+                                </div>
+                                <div class="col-12 float-start px-2">
+                                    Used to calculate shipping rates accurately
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-top-0">
+                            <button type="button" class="btn addBtns waves-effect waves-light px-3" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn waves-effect waves-light filledBtns px-3">Done</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         END Add Custom Product Modal -->
+
+        <!-- START Add Custom Product Modal-->
+        <!-- Modal-->
+        <div class="modal fade" id="addNewCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-2">
+                    <form class="needs-validation" novalidate>
+                        <div class="modal-header border-bottom-0">
+                            <h5 class="card-title fw-bold" id="exampleModalLabel">Add New Customer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-0">
+                            <div class="row px-1">
+                                <div class="col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="firstname">First Name</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="" required>
+                                    <div class="invalid-feedback">Please provide First Name</div>
+                                </div>
+                                <div class="col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="" required>
+                                    <div class="invalid-feedback">Please provide Item name</div>
+                                </div>
+                                <div class="col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="contact">Contact Number</label>
+                                    <input type="text" class="form-control" id="contact" placeholder="" required>
+                                    <div class="invalid-feedback">Please provide Item name</div>
+                                </div>
+                                <div class="col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="email">Email Id</label>
+                                    <input type="text" class="form-control" id="email" placeholder="" required>
+                                    <div class="invalid-feedback">Please provide Item name</div>
+                                </div>
+                                <div class="col-12 float-start px-2 mb-3">
+                                    <label class="form-label" for="password">Password</label>
+                                    <input type="text" class="form-control" id="password" placeholder="" required>
+                                    <div class="invalid-feedback">Please provide Item name</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-top-0">
+                            <button type="button" class="btn addBtns waves-effect waves-light px-3" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn waves-effect waves-light filledBtns px-3">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--END Add Custom Product Modal -->
+
+        <!-- START Product Brows Modal-->
+        <!-- Modal -->
+        <div class="modal fade createOrderWrap" id="productBrows" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content px-0">
+                    <div class="modal-header border-bottom-0 px-4 pb-5">
+                        <h5 class="card-title fw-bold" id="exampleModalLabel">Select products</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row px-1">
-                            <div class="col-md-5 col-sm-6 col-12 float-start px-2 mb-3">
-                                <label class="form-label" for="itemname">Item name</label>
-                                <input type="text" class="form-control" id="itemName" placeholder="">
-                            </div>
-                            <div class="col-md-4 col-sm-3 col-12 float-start px-2 mb-3">
-                                <label class="form-label" for="price">Price</label>
-                                <input type="text" class="form-control" id="price" placeholder="CHF 0.00">
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-12 float-start px-2 mb-3">
-                                <label class="form-label" for="quantity">Quantity</label>
-                                <input type="number" class="form-control" id="quantity" placeholder="0">
-                            </div>
-                        </div>
 
-                        <div class="row px-1">
-                            <div class="col-12 float-start px-2 mb-3 mt-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="taxableItem">
-                                    <label class="form-check-label" for="taxableItem">
-												Item is taxable
-											  </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="shippingItem">
-                                    <label class="form-check-label" for="shippingItem">
-												Item requires shipping
-											  </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row px-1">
-                            <div class="col-md-4 col-sm-7 col-7 float-start px-2 mb-3">
-                                <label class="form-label" for="weight">Weight</label>
-                                <input type="text" class="form-control" id="weight" placeholder="0.0">
-                            </div>
-
-                            <div class="col-md-2 col-sm-5 col-5 float-start px-2 mb-3 ">
-                                <label class="form-label" for="weight">&nbsp;</label>
-                                <select class="form-select radius8" aria-label="Default select example">
-                                                <option selected>kg</option>
-                                                <option>lb</option>
-                                                <option>oz</option>
-                                                <option>g</option>
-                                            </select>
-                            </div>
-                            <div class="col-12 float-start px-2">
-                                Used to calculate shipping rates accurately
+                        <div class="col-12 px-0 float-start px-3 bg-white position-absolute searchbarProduct border-bottom">
+                            <div class="col-12 float-start px-2 mb-3">
+                                <input type="search" class="form-control" id="searchproduct" placeholder="Search Products">
+                                <span class="formIcons searchIcon me-4">
+										<i toggle="#password-field" class="fas fa-search"></i>
+										</span>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn addBtns waves-effect waves-light px-3" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn waves-effect waves-light filledBtns px-3">Done</button>
+                    <div class="modal-body py-0 px-0">
+                        <form class="needs-validation" novalidate>
+                            <div class="productsPage1">
+
+                                <div class="col-12 px-0 border-bottom float-start">
+                                    <div class="col-12 createOrderList px-0 mt-3">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover mb-0 tablesWrap">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+                                                    <tr class="productVarient">
+                                                        <td>
+                                                            <div class="form-check ms-5">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline1">
+                                                            </div>
+                                                        </td>
+                                                        <td colspan="2">Default Title</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr class="productVarient">
+                                                        <td>
+                                                            <div class="form-check ms-5">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline2">
+                                                            </div>
+                                                        </td>
+                                                        <td colspan="2">Default Title</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline3">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+                                                    <tr class="productVarient">
+                                                        <td>
+                                                            <div class="form-check ms-5">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline3">
+                                                            </div>
+                                                        </td>
+                                                        <td colspan="2">Default Title</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline4">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline5">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline6">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline7">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline8">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline9">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check ms-3">
+                                                                <input type="checkbox" class="form-check-input" id="customControlInline10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="createOrderproductImgs mb-0">
+                                                                <img src="assets/images/small/img-6.jpg">
+                                                            </p>
+                                                        </td>
+                                                        <td>Baby Products 1</td>
+                                                        <td>9 available</td>
+                                                        <td>CHF 0.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="border-top px-2 col-12 py-3">
+                        <div class="col-6 float-start px-2">
+                            <button type="button" class="btn addBtns waves-effect waves-light px-3 float-start" disabled>0 Variants Selected</button>
+                        </div>
+                        <div class="col-6 float-start px-2">
+                            <button type="submit" class="btn waves-effect waves-light filledBtns px-3 float-end">Done</button>
+                            <button type="button" class="btn addBtns waves-effect waves-light px-3 float-end me-2" data-bs-dismiss="modal">Cancel</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END Add Custom Product Modal -->
+        <!-- END Product Brows Modal-->
 
     </div>
     <!-- end container-fluid -->
@@ -700,6 +1003,12 @@
 
     <!-- Plugins js -->
     <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+
+    <!-- parsley plugin -->
+    <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+
+    <!-- validation init -->
+    <script src="assets/js/pages/form-validation.init.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>

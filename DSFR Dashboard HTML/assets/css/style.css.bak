@@ -625,7 +625,7 @@ body #page-topbar {
 }
 .searchbarProduct .formIcons.searchIcon {
     top: 11px; 
-	right:30px;
+	right:20px;
 }
 
 
