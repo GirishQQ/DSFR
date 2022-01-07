@@ -385,6 +385,27 @@ sup{
 	}
 }
 
+/*Sidebar CSS*/
+#sidebar-menu ul li a:hover {
+    color: #84151E;
+}
+#sidebar-menu ul li svg  {
+    stroke: #777777;
+	fill:none;
+}
+#sidebar-menu ul li a:hover span svg{
+	stroke: #84151E;
+}
+#sidebar-menu ul li .activeSideTab{
+	background: #6021B6;
+}
+#sidebar-menu ul li .activeSideTab span{
+    color: #ffffff;
+}
+#sidebar-menu ul li .activeSideTab span svg{
+	fill: #ffffff;
+	stroke: none;
+}
 
 /*Vendor Dashboard Page CSS*/
 body #page-topbar {
@@ -625,7 +646,7 @@ body #page-topbar {
 }
 .searchbarProduct .formIcons.searchIcon {
     top: 11px; 
-	right:20px;
+	right:30px;
 }
 
 
