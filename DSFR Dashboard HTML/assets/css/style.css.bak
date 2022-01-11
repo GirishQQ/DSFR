@@ -397,7 +397,7 @@ sup{
 	stroke: #84151E;
 }
 #sidebar-menu ul li .activeSideTab{
-	background: #6021B6;
+	background: #84151E;
 }
 #sidebar-menu ul li .activeSideTab span{
     color: #ffffff;
@@ -647,6 +647,14 @@ body #page-topbar {
 .searchbarProduct .formIcons.searchIcon {
     top: 11px; 
 	right:30px;
+}
+
+/*Create Discount Page CSS*/
+.createDiscountWrap .searchIcon {
+    top: 22%;
+}
+.disValuePercentageWrap .formIcons {
+    top: 22%;
 }
 
 
