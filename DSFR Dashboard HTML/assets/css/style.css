@@ -145,8 +145,8 @@ sup{
 	color:#ffffff;
 }
 .successBtns:hover{
-	background:#84151E;
-	border:1px solid #84151E;
+	background:#63AD19;
+	border:1px solid #63AD19;
 	border-radius:10px;
 	color:#ffffff;
 }
@@ -396,14 +396,14 @@ sup{
 #sidebar-menu ul li a:hover span svg{
 	stroke: #84151E;
 }
-#sidebar-menu ul li .activeSideTab{
-	background: #84151E;
-}
 #sidebar-menu ul li .activeSideTab span{
-    color: #ffffff;
+    color: #84151E;
 }
 #sidebar-menu ul li .activeSideTab span svg{
-	fill: #ffffff;
+	fill: #84151E;
+	stroke: #84151E;
+}
+#sidebar-menu ul li .activeSideTab span svg:hover{
 	stroke: none;
 }
 
@@ -756,7 +756,6 @@ input[switch]:checked+label:after {
     padding: 0px 50px;
     list-style: none;
     text-align: left;
-    max-width: 40%;
 }
 
 @media (max-width: 767px) {
@@ -856,3 +855,61 @@ input[switch]:checked+label:after {
     left: 0;
     right: -55.8px;
 }
+
+
+.timelineWrapAdmin .card .timelineWrap, .timelineWrapAdmin .card {
+    background: none;
+    box-shadow: none;
+}
+.timelineWrapAdmin .card .timelineWrap .timeline {
+    border-left: 2px solid #b1b1b1;
+}
+.timelineWrapAdmin .card .timelineWrap .timeline .event .eventBox {
+    border-radius: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+    box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+}
+.timelineWrapAdmin .card .timelineWrap .timeline .event:after {
+    top: 27px;
+    background: #c9c4c4;
+    height: 17px;
+    width: 17px;
+    left: -59.8px;
+    box-shadow: none;
+}
+
+@media (max-width: 767px){
+    .timelineWrapAdmin .card .timelineWrap .timeline .event:after {
+    left: -31.8px;
+}
+}
+
+.apexcharts-legend{
+    display: none;
+}
+
+.dayFilter{
+    width:30px !important;
+}
+.dayFilter:focus{
+    box-shadow:none;
+}
+.posActive{
+    background-color: #d7f0bd;
+    color:#569318;
+    border-radius: 10px;
+}
+.posInactive{
+    background-color: #f5e5b8;
+    color:#b08a24;
+    border-radius: 10px;
+}
+
+.commentorPhoto{
+    width: 50px;
+    height: 50px;
+    background-color: #707070;
+}
+
+
